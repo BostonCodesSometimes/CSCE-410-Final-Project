@@ -1,0 +1,8 @@
+python-dotenv
+biopython
+beautifulsoup4
+lxml
+pinecone-client
+langchain-pinecone
+langchain-openai
+langchain-text-splitters
