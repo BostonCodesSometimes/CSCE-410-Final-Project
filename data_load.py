@@ -8,12 +8,13 @@ from langchain_pinecone import PineconeVectorStore
 from langchain_openai import OpenAIEmbeddings
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter # Added missing import
+from queries import all_queries
 
 # --- Configuration & Credentials ---
-NCBI_EMAIL = "add Email"
-NCBI_API_KEY = "add API Key"
-PINECONE_API_KEY = "add API Jey"
-OPENAI_API_KEY = "add API Key" # Required for embeddings
+NCBI_EMAIL = "add email"
+NCBI_API_KEY = "add key"
+PINECONE_API_KEY = "add key"
+OPENAI_API_KEY = "add key" # Required for embeddings
 INDEX_NAME = "lite-rag" 
 EMBEDDING_MODEL = "text-embedding-3-small"
 
@@ -30,8 +31,8 @@ pc = Pinecone(api_key=PINECONE_API_KEY)
 
 # --- Define the Text Splitter ---
 text_splitter = RecursiveCharacterTextSplitter(
-    chunk_size=1000,   # Max characters per chunk
-    chunk_overlap=150, # Overlap to maintain context between chunks
+    chunk_size=500,   # Max characters per chunk
+    chunk_overlap=100, # Overlap to maintain context between chunks
     length_function=len,
     separators=["\n\n", "\n", " ", ""]
 )
@@ -51,9 +52,9 @@ def get_pubmed_ids(query, limit=20):
         return [], None, None
 
 def fetch_and_parse_pubmed(pmid):
-    """Fetches metadata and full text (if available) for a given PMID."""
+    """Fetches metadata and abstract for a given PMID."""
     try:
-        # Rate limiting: 0.1s delay for API key users, 0.34s without
+        # Rate limiting: 0.1s delay for API key users, 0.35s without
         time.sleep(0.1 if Entrez.api_key else 0.35)
 
         # Fetch Metadata
@@ -86,30 +87,9 @@ def fetch_and_parse_pubmed(pmid):
         pmc_tag = soup.find("ArticleId", IdType="pmc")
         pmcid = pmc_tag.get_text() if pmc_tag else None
         
-        # --- Text Extraction Strategy ---
-        final_text = ""
-        is_full_text = False
-
-        if pmcid:
-            try:
-                time.sleep(0.1)
-                with Entrez.efetch(db="pmc", id=pmcid, rettype="full", retmode="xml") as pmc_handle:
-                    pmc_soup = BeautifulSoup(pmc_handle.read(), "lxml-xml")
-                
-                body = pmc_soup.find("body")
-                if body:
-                    # Strip out non-prose elements to save tokens
-                    for tag in body.find_all(["table-wrap", "xref", "disp-formula", "fig"]):
-                        tag.decompose()
-                    final_text = body.get_text(separator=" ", strip=True)
-                    is_full_text = True
-            except Exception as pmc_e:
-                print(f"PMC fetch failed for {pmcid}, falling back to abstract.")
-
-        # Fallback to Abstract
-        if not final_text:
-            abstract_parts = soup.find_all("AbstractText")
-            final_text = " ".join([part.get_text() for part in abstract_parts])
+        # --- Text Extraction Strategy: ABSTRACT ONLY ---
+        abstract_parts = soup.find_all("AbstractText")
+        final_text = " ".join([part.get_text() for part in abstract_parts])
 
         return {
             "id": pmid,
@@ -120,7 +100,7 @@ def fetch_and_parse_pubmed(pmid):
             "authors": authors,
             "keywords": keywords,
             "text": final_text,
-            "is_full_text": is_full_text,
+            "is_full_text": False, # Explicitly false since we only grab abstracts
             "url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
         }
     except Exception as e:
@@ -167,10 +147,14 @@ def pipe_to_pinecone(processed_chunks):
         print("No chunks to process. Exiting upload.")
         return
 
-    embeddings = OpenAIEmbeddings(model=EMBEDDING_MODEL)
+    embeddings = OpenAIEmbeddings(
+        model=EMBEDDING_MODEL, 
+        dimensions=512
+    )
     
     docs = []
     for chunk in processed_chunks:
+        # --- Updated Metadata: Now captures everything from process_data ---
         metadata = {
             "id": chunk.get("_id"),
             "doc_id": chunk.get("document_id"),
@@ -178,7 +162,16 @@ def pipe_to_pinecone(processed_chunks):
             "url": chunk.get("document_url", ""),
             "year": str(chunk.get("year", "N/A")),
             "journal": chunk.get("journal", "Unknown"),
-            "authors": ", ".join(chunk.get("authors", [])[:5]) 
+            
+            # Pinecone accepts lists of strings! Passing these as lists 
+            # makes metadata filtering much easier later.
+            "authors": chunk.get("authors", []), 
+            "keywords": chunk.get("keywords", []), 
+            
+            # Additional context metadata
+            "chunk_number": chunk.get("chunk_number", 1),
+            "total_chunks_in_doc": chunk.get("total_chunks_in_doc", 1),
+            "created_at": chunk.get("created_at", "")
         }
         
         docs.append(Document(
@@ -197,19 +190,27 @@ def pipe_to_pinecone(processed_chunks):
     print("Upload to 'lite-rag' complete.")
 
 if __name__ == "__main__":
-    # 1. Get IDs, not sure what articles we want, change query and limit accordingly
-    target_ids, web_env, q_key = get_pubmed_ids("CRISPR gene therapy 2025", limit=5)
-    
-    # 2. Fetch and Parse
-    if target_ids:
-        print(f"Fetching data for {len(target_ids)} articles...")
-        raw_data = [fetch_and_parse_pubmed(pid) for pid in target_ids]
+    all_ids = set()
 
-        # 3. Process and Chunk
+    # 1. Collect IDs from all queries
+    for q in all_queries:
+        ids, _, _ = get_pubmed_ids(q, limit=5)
+        all_ids.update(ids)
+
+    all_ids = list(all_ids)
+    print(f"Total unique articles collected: {len(all_ids)}")
+
+
+    # 2. Fetch and parse
+    if all_ids:
+        print(f"Fetching data for {len(all_ids)} articles...")
+        raw_data = [fetch_and_parse_pubmed(pid) for pid in all_ids]
+
+        # 3. Process and chunk
         print("Processing and chunking text...")
         final_chunks = process_data(raw_data)
-        
-        # 4. Upload
+
+        # 4. Upload ONCE
         pipe_to_pinecone(final_chunks)
     else:
         print("No IDs found to process.")
