@@ -1,78 +1,58 @@
+import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-"""
-1. Pick the most relevant chunk first
-2. For each remaining chunk, score it with:
-   - MMR = λ * Relevance - (1-λ) * Similarity
-3. Pick the best one
-4. Repeat until you hit your limit
-"""
+def mmr(query_embedding, chunk_embeddings, k=5, lambda_param=0.5):
+    """
+    Selects the top k that are the most relevant and unique
 
-"The functions below were simply copy-pasted from the following article: "
-"https://medium.com/tech-that-works/maximal-marginal-relevance-to-rerank-results-in-unsupervised-keyphrase-extraction-22d95015c7c5"
+    param query_embedding: vector representation of the query
+    param chunk_embeddings: matrix of vector representations for each chunk
+        shape: (number of retrieved chunks, embedding dimension)
+    param k: number of chunks to select
+    param lambda_param: balance between relevance and diversity (0 to 1)
+    """
 
-def maximal_marginal_relevance(sentence_vector, phrases, embedding_matrix, lambda_constant=0.5, threshold_terms=10):
-    """
-    Return ranked phrases using MMR. Cosine similarity is used as similarity measure.
-    :param sentence_vector: Query vector
-    :param phrases: list of candidate phrases
-    :param embedding_matrix: matrix having index as phrases and values as vector
-    :param lambda_constant: 0.5 to balance diversity and accuracy. if lambda_constant is high, then higher accuracy. If lambda_constant is low then high diversity.
-    :param threshold_terms: number of terms to include in result set
-    :return: Ranked phrases with score
-    """
-    # todo: Use cosine similarity matrix for lookup among phrases instead of making call everytime.
-    s = []
-    r = sorted(phrases, key=lambda x: x[1], reverse=True)
-    r = [i[0] for i in r]
-    while len(r) > 0:
-        score = 0
-        phrase_to_add = ''
-        for i in r:
-            first_part = cosine_similarity([sentence_vector], [embedding_matrix.loc[i]])[0][0]
-            second_part = 0
-            for j in s:
-                cos_sim = cosine_similarity([embedding_matrix.loc[i]], [embedding_matrix.loc[j[0]]])[0][0]
-                if cos_sim > second_part:
-                    second_part = cos_sim
-            equation_score = lambda_constant*(first_part)-(1-lambda_constant) * second_part
-            if equation_score > score:
-                score = equation_score
-                phrase_to_add = i
-        if phrase_to_add == '':
-            phrase_to_add = i
-        r.remove(phrase_to_add)
-        s.append((phrase_to_add, score))
-    return (s, s[:threshold_terms])[threshold_terms > len(s)]
+    # compute relevance of each chunk to the query
+    # each value in query_sim is a decimal (essentially a percentage) measure of how relevant the chunk is to the query
+    query_sim = cosine_similarity(
+        chunk_embeddings, query_embedding.reshape(1, -1)
+    ).flatten()
 
-def club_similar_keywords(emb_mat, sim_score=0.9):
-    """
-    :param emb_mat: matrix having vectors with words as index
-    :param sim_score: 0.9 by default
-    :return: returns list of unique words from index after combining words which has similarity score of more than
-    0.9
-    """
-    if len(emb_mat) == 0:
-        return 'NA'
-    xx = cosine_similarity(emb_mat)
-    final_keywords = set(emb_mat.index)
-    N = len(emb_mat.index)
-    dd = {}
-    for i in range(N):
-        for j in range(N):
-            if (float(xx[i][j]) > sim_score) and (i != j):
-                try:
-                    dd[emb_mat.index[i]].append(emb_mat.index[j])
-                except:
-                    dd[emb_mat.index[i]] = []
-                    dd[emb_mat.index[i]].append(emb_mat.index[j])
-    removed_keywords = []
-    for key in dd:
-        for val in dd[key]:
-            if key not in removed_keywords:
-                removed_keywords += dd[key]
-                try:
-                    final_keywords.remove(val)
-                except:
-                    pass
-    return final_keywords
+    selected = [] # indices of selected chunks
+    candidates = list(range(len(chunk_embeddings))) # indices of all chunks to consider
+
+    # to start off, pick most relevant chunk first
+    first = np.argmax(query_sim)
+    selected.append(first)
+    candidates.remove(first)
+
+    # keep selecting until we have k chunks or run out of candidates
+    while len(selected) < k and candidates:
+        best_score = -np.inf    # best score so far
+        best_idx = None         # index of chunk with best score
+
+        for idx in candidates: # iterate through remaining candidates
+            relevance = query_sim[idx] # relevance of this chunk to the query
+
+            # compute similarity to already selected chunks
+            sim_to_selected = cosine_similarity(
+                chunk_embeddings[idx].reshape(1, -1),   # current candidate chunk embedding
+                chunk_embeddings[selected]              # each selected chunk's embedding
+            ).max() # penalty for the most redundant chunk
+
+            # compute MMR score: balance relevance and diversity
+            score = (
+                lambda_param * relevance                # reward for relevance
+                - (1 - lambda_param) * sim_to_selected  # penalty for redundancy
+            )
+
+            # keep the best scoring candidate
+            if score > best_score:
+                best_score = score
+                best_idx = idx
+
+        # add the best candidate to selected and remove from candidates
+        selected.append(best_idx)
+        candidates.remove(best_idx)
+
+    return selected
