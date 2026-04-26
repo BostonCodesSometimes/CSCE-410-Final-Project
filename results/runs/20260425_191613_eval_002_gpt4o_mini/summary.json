@@ -1,0 +1,44 @@
+{
+  "similarity": {
+    "runs": 20,
+    "means": {
+      "recall_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "evidence_hit_rate": 1.0,
+      "redundancy_score": 0.5739414881519623,
+      "avg_pairwise_similarity": 0.5739414881519623,
+      "prompt_token_count": 1765,
+      "budget_utilization": 0.9805555555555555,
+      "rouge_l": 0.45226230671122897,
+      "keyword_support_rate": 0.9181339130210459
+    }
+  },
+  "mmr": {
+    "runs": 20,
+    "means": {
+      "recall_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "evidence_hit_rate": 1.0,
+      "redundancy_score": 0.5441683157664654,
+      "avg_pairwise_similarity": 0.5441683157664654,
+      "prompt_token_count": 1757.4,
+      "budget_utilization": 0.9763333333333333,
+      "rouge_l": 0.46729293647442927,
+      "keyword_support_rate": 0.9202443643085629
+    }
+  },
+  "litepack": {
+    "runs": 20,
+    "means": {
+      "recall_at_5": 1.0,
+      "ndcg_at_5": 1.0,
+      "evidence_hit_rate": 1.0,
+      "redundancy_score": 0.5521518001014933,
+      "avg_pairwise_similarity": 0.5521518001014933,
+      "prompt_token_count": 1733.8,
+      "budget_utilization": 0.9632222222222222,
+      "rouge_l": 0.4761370134237384,
+      "keyword_support_rate": 0.9308302716504387
+    }
+  }
+}

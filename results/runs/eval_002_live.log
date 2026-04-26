@@ -1,0 +1,153 @@
+/Users/74993723@nebraska.edu/Documents/CSCE-410-Final-Project/.venv/lib/python3.9/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+INFO __main__: load_eval_set: loaded 20 entries from '../results/evaluation_data/eval_data.json'
+WARNING urllib3.connectionpool: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.pinecone.io', port=443): Failed to resolve 'api.pinecone.io' ([Errno 8] nodename nor servname provided, or not known)")': /indexes/lite-rag
+WARNING urllib3.connectionpool: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.pinecone.io', port=443): Failed to resolve 'api.pinecone.io' ([Errno 8] nodename nor servname provided, or not known)")': /indexes/lite-rag
+WARNING urllib3.connectionpool: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='api.pinecone.io', port=443): Failed to resolve 'api.pinecone.io' ([Errno 8] nodename nor servname provided, or not known)")': /indexes/lite-rag
+WARNING retriever: Could not read index metric from describe_index (HTTPSConnectionPool(host='api.pinecone.io', port=443): Max retries exceeded with url: /indexes/lite-rag (Caused by NameResolutionError("HTTPSConnection(host='api.pinecone.io', port=443): Failed to resolve 'api.pinecone.io' ([Errno 8] nodename nor servname provided, or not known)"))). Defaulting to 'cosine' (higher-is-better).
+WARNING langchain_pinecone.vectorstores: Index host ignored when initializing with index object.
+INFO retriever: Retriever initialized  index=lite-rag  metric=cosine
+INFO __main__: Evaluating question 1/20: 'What is the minimally clinically important difference (MCID)'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.468545 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.987664 seconds
+ERROR __main__: compare_methods failed for question 1 ('What is the minimally clinically important difference (MCID)'): Connection error.
+INFO __main__: Evaluating question 2/20: 'What were the outcomes of the Internet Cognitive Therapy for'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.463316 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.871968 seconds
+ERROR __main__: compare_methods failed for question 2 ('What were the outcomes of the Internet Cognitive Therapy for'): Connection error.
+INFO __main__: Evaluating question 3/20: 'What is the proposed stepwise algorithm for the pharmacother'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.450365 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.907522 seconds
+ERROR __main__: compare_methods failed for question 3 ('What is the proposed stepwise algorithm for the pharmacother'): Connection error.
+INFO __main__: Evaluating question 4/20: 'What are the key drivers associated with burnout among publi'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.452102 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.753343 seconds
+ERROR __main__: compare_methods failed for question 4 ('What are the key drivers associated with burnout among publi'): Connection error.
+INFO __main__: Evaluating question 5/20: 'What is the efficacy and tolerability of cannabidiol (CBD) i'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.448972 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.789389 seconds
+ERROR __main__: compare_methods failed for question 5 ('What is the efficacy and tolerability of cannabidiol (CBD) i'): Connection error.
+INFO __main__: Evaluating question 6/20: 'What types of technology-based interventions are reviewed fo'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.475335 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.890154 seconds
+ERROR __main__: compare_methods failed for question 6 ('What types of technology-based interventions are reviewed fo'): Connection error.
+INFO __main__: Evaluating question 7/20: 'What is the minimum efficacy threshold for eLi12 to be consi'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.496901 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.759309 seconds
+ERROR __main__: compare_methods failed for question 7 ('What is the minimum efficacy threshold for eLi12 to be consi'): Connection error.
+INFO __main__: Evaluating question 8/20: 'What are the psychometric properties of the Turkish version '
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.497496 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.787131 seconds
+ERROR __main__: compare_methods failed for question 8 ('What are the psychometric properties of the Turkish version '): Connection error.
+INFO __main__: Evaluating question 9/20: 'How do self-management behaviors and depressive symptoms aff'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.463767 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.754614 seconds
+ERROR __main__: compare_methods failed for question 9 ('How do self-management behaviors and depressive symptoms aff'): Connection error.
+INFO __main__: Evaluating question 10/20: 'What is the primary outcome of the MIndfulness-based Neurofe'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.452760 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.867205 seconds
+ERROR __main__: compare_methods failed for question 10 ('What is the primary outcome of the MIndfulness-based Neurofe'): Connection error.
+INFO __main__: Evaluating question 11/20: 'What is the adjusted hazard ratio for neurodevelopmental dis'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.484309 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.840196 seconds
+ERROR __main__: compare_methods failed for question 11 ('What is the adjusted hazard ratio for neurodevelopmental dis'): Connection error.
+INFO __main__: Evaluating question 12/20: 'What were the preliminary clinical outcomes observed in part'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.419803 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.929998 seconds
+ERROR __main__: compare_methods failed for question 12 ('What were the preliminary clinical outcomes observed in part'): Connection error.
+INFO __main__: Evaluating question 13/20: 'How do cognitive therapy and short-term dynamic psychotherap'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.464483 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.857237 seconds
+ERROR __main__: compare_methods failed for question 13 ('How do cognitive therapy and short-term dynamic psychotherap'): Connection error.
+INFO __main__: Evaluating question 14/20: 'How does the treatment with atypical antipsychotics affect p'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.399213 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.820786 seconds
+ERROR __main__: compare_methods failed for question 14 ('How does the treatment with atypical antipsychotics affect p'): Connection error.
+INFO __main__: Evaluating question 15/20: 'What are the neuropsychiatric adverse event reporting patter'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.482324 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.912955 seconds
+ERROR __main__: compare_methods failed for question 15 ('What are the neuropsychiatric adverse event reporting patter'): Connection error.
+INFO __main__: Evaluating question 16/20: 'How does the integration of fNIRS-guided neurofeedback and a'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.450850 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.878911 seconds
+ERROR __main__: compare_methods failed for question 16 ('How does the integration of fNIRS-guided neurofeedback and a'): Connection error.
+INFO __main__: Evaluating question 17/20: 'What are the effects of omega-3 fatty acids and chiropractic'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.419413 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.945789 seconds
+ERROR __main__: compare_methods failed for question 17 ('What are the effects of omega-3 fatty acids and chiropractic'): Connection error.
+INFO __main__: Evaluating question 18/20: 'What were the observed changes in emergency department visit'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.379788 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.991606 seconds
+ERROR __main__: compare_methods failed for question 18 ('What were the observed changes in emergency department visit'): Connection error.
+INFO __main__: Evaluating question 19/20: 'What is the effect of benzodiazepines on the recurrence risk'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.391640 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.836548 seconds
+ERROR __main__: compare_methods failed for question 19 ('What is the effect of benzodiazepines on the recurrence risk'): Connection error.
+INFO __main__: Evaluating question 20/20: 'What roles do central resident immune cells play in neuropsy'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO openai._base_client: Retrying request to /embeddings in 0.406032 seconds
+INFO openai._base_client: Retrying request to /embeddings in 0.867843 seconds
+ERROR __main__: compare_methods failed for question 20 ('What roles do central resident immune cells play in neuropsy'): Connection error.
+
+[1/20] What is the minimally clinically important difference (MCID) for the 2-Minute Wa
+
+[2/20] What were the outcomes of the Internet Cognitive Therapy for Prolonged Grief (iC
+
+[3/20] What is the proposed stepwise algorithm for the pharmacotherapy of late-life dep
+
+[4/20] What are the key drivers associated with burnout among public safety personnel?
+
+[5/20] What is the efficacy and tolerability of cannabidiol (CBD) in patients with schi
+
+[6/20] What types of technology-based interventions are reviewed for reducing anxiety i
+
+[7/20] What is the minimum efficacy threshold for eLi12 to be considered cost-effective
+
+[8/20] What are the psychometric properties of the Turkish version of the PARDI-AR-Q fo
+
+[9/20] How do self-management behaviors and depressive symptoms affect the risk of mild
+
+[10/20] What is the primary outcome of the MIndfulness-based Neurofeedback to Augment DB
+
+[11/20] What is the adjusted hazard ratio for neurodevelopmental disorders in children e
+
+[12/20] What were the preliminary clinical outcomes observed in participants using the m
+
+[13/20] How do cognitive therapy and short-term dynamic psychotherapy compare in effecti
+
+[14/20] How does the treatment with atypical antipsychotics affect plasma hydrogen sulfi
+
+[15/20] What are the neuropsychiatric adverse event reporting patterns associated with t
+
+[16/20] How does the integration of fNIRS-guided neurofeedback and art therapy with cogn
+
+[17/20] What are the effects of omega-3 fatty acids and chiropractic care on postpartum 
+
+[18/20] What were the observed changes in emergency department visits and hospitalizatio
+
+[19/20] What is the effect of benzodiazepines on the recurrence risk of catatonia?
+
+[20/20] What roles do central resident immune cells play in neuropsychiatric disorders a
+
+Results written to: /Users/74993723@nebraska.edu/Documents/CSCE-410-Final-Project/results/runs/20260425_191336_eval_002/results.jsonl
+(no results to aggregate)
+Run directory: /Users/74993723@nebraska.edu/Documents/CSCE-410-Final-Project/results/runs/20260425_191336_eval_002

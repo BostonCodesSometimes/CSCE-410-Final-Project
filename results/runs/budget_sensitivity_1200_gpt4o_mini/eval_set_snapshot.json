@@ -1,0 +1,302 @@
+[
+  {
+    "question": "What is the minimally clinically important difference (MCID) for the 2-Minute Walk Test in subacute stroke patients?",
+    "gold_pmids": [
+      "41984927"
+    ],
+    "reference_answer": "The 2MWT MCID was 33 meters (95% CI: 30-36 meters), with 87% sensitivity and 82% specificity. This MCID is a reliable and patient-centered benchmark for assessing mobility gains in subacute stroke populations.",
+    "question_type": "prognosis",
+    "keywords": [
+      "2-Minute Walk Test",
+      "minimally clinically important difference",
+      "subacute stroke",
+      "mobility gains",
+      "rehabilitation"
+    ]
+  },
+  {
+    "question": "What were the outcomes of the Internet Cognitive Therapy for Prolonged Grief (iCT-PG) intervention in terms of symptom reduction?",
+    "gold_pmids": [
+      "41873489"
+    ],
+    "reference_answer": "All participants completed treatment, with large reductions in Prolonged Grief Disorder (PGD) symptoms and comorbid symptoms of PTSD, depression, anxiety, and functional impairment observed. At post-treatment, 87.5% of participants demonstrated reliable improvement in PGD symptoms and recovery below clinical cut-offs.",
+    "question_type": "treatment",
+    "keywords": [
+      "Prolonged Grief Disorder",
+      "Internet Cognitive Therapy",
+      "symptom reduction",
+      "therapist-assisted",
+      "clinical outcomes"
+    ]
+  },
+  {
+    "question": "What is the proposed stepwise algorithm for the pharmacotherapy of late-life depression in older adults?",
+    "gold_pmids": [
+      "41714410"
+    ],
+    "reference_answer": "The proposed stepwise algorithm for the pharmacotherapy of late-life depression starts with serotonin-selective reuptake inhibitors. If the patient does not respond, the next step is switching to serotonin-norepinephrine reuptake inhibitors, followed by augmentation with aripiprazole as the preferred agent.",
+    "question_type": "treatment",
+    "keywords": [
+      "late-life depression",
+      "pharmacotherapy",
+      "stepwise algorithm",
+      "serotonin-selective reuptake inhibitors",
+      "augmentation"
+    ]
+  },
+  {
+    "question": "What are the key drivers associated with burnout among public safety personnel?",
+    "gold_pmids": [
+      "41987936"
+    ],
+    "reference_answer": "Key drivers of burnout among public safety personnel include operational factors such as occupational stress and organizational support, as well as non-organizational factors like traumatic events and work-family conflict.",
+    "question_type": "mechanism",
+    "keywords": [
+      "burnout",
+      "public safety workers",
+      "operational factors",
+      "moral injury",
+      "organizational support"
+    ]
+  },
+  {
+    "question": "What is the efficacy and tolerability of cannabidiol (CBD) in patients with schizophrenia spectrum disorders according to randomized controlled trials?",
+    "gold_pmids": [
+      "41948975"
+    ],
+    "reference_answer": "CBD did not show a clear benefit for psychosis symptoms in RCTs but was generally well tolerated. The effect size for CBD on psychosis symptom severity was not statistically significant, and the quality of the evidence ranged from low to very low.",
+    "question_type": "treatment",
+    "keywords": [
+      "cannabidiol",
+      "psychotic disorders",
+      "schizophrenia",
+      "randomized controlled trials",
+      "tolerability"
+    ]
+  },
+  {
+    "question": "What types of technology-based interventions are reviewed for reducing anxiety in youth?",
+    "gold_pmids": [
+      "41944825"
+    ],
+    "reference_answer": "The review discusses emerging digital approaches including mobile applications, internet-based cognitive-behavioral therapy programs, telehealth, gamified interventions, therapeutic podcasts, and virtual reality exposure interventions designed to reduce anxiety in youth.",
+    "question_type": "treatment",
+    "keywords": [
+      "pediatric anxiety",
+      "technology-based interventions",
+      "mobile applications",
+      "telehealth",
+      "cognitive-behavioral therapy"
+    ]
+  },
+  {
+    "question": "What is the minimum efficacy threshold for eLi12 to be considered cost-effective in the treatment of bipolar disorder?",
+    "gold_pmids": [
+      "41940526"
+    ],
+    "reference_answer": "A 2.5% reduction in the number of hospitalizations and suicides is sufficient for eLi12 to be considered cost-effective within one year of implementation. For a longer time horizon, less than 1% improvement would be sufficient within a three-year time horizon.",
+    "question_type": "treatment",
+    "keywords": [
+      "eLi12",
+      "bipolar disorder",
+      "cost-effectiveness",
+      "hospitalizations",
+      "suicides"
+    ]
+  },
+  {
+    "question": "What are the psychometric properties of the Turkish version of the PARDI-AR-Q for assessing ARFID in adolescents?",
+    "gold_pmids": [
+      "41906142"
+    ],
+    "reference_answer": "The PARDI-AR-Q showed good to excellent internal consistency, with a well-fitting four-factor structure, including severity of impact (α = 0.955), sensory-based avoidance (α = 0.96), concern about aversive consequences (α = 0.965), and lack of interest (α = 0.848). Test-retest analyses further supported the reliability of the scale.",
+    "question_type": "diagnosis",
+    "keywords": [
+      "PARDI-AR-Q",
+      "ARFID",
+      "reliability",
+      "validity",
+      "Turkish adolescents"
+    ]
+  },
+  {
+    "question": "How do self-management behaviors and depressive symptoms affect the risk of mild cognitive impairment in rural elderly with type 2 diabetes?",
+    "gold_pmids": [
+      "41987887"
+    ],
+    "reference_answer": "Improved self-management behaviors and less depressive symptoms were associated with lower risks of mild cognitive impairment (MCI) among the rural elderly with type 2 diabetes. Specifically, increased self-management behaviors and decreased depressive symptoms predicted better glycemic control, which in turn contributed to a lower incidence of MCI.",
+    "question_type": "mechanism",
+    "keywords": [
+      "self-management behaviors",
+      "depressive symptoms",
+      "mild cognitive impairment",
+      "glycemic control",
+      "type 2 diabetes"
+    ]
+  },
+  {
+    "question": "What is the primary outcome of the MIndfulness-based Neurofeedback to Augment DBT Psychotherapy for Borderline Personality Disorder (MIND-BPD) trial?",
+    "gold_pmids": [
+      "41860884"
+    ],
+    "reference_answer": "The primary outcome of the R61 phase of this trial is change in DMN connectivity between pre- and post-NF resting-state scans, as defined by increased within-network connectivity between the medial prefrontal cortex (mPFC) and posterior cingulate cortex (PCC), and increased connectivity between the mPFC and dorsolateral prefrontal cortex (dlPFC).",
+    "question_type": "treatment",
+    "keywords": [
+      "Borderline Personality Disorder",
+      "DBT",
+      "neurofeedback",
+      "DMN connectivity",
+      "mPFC"
+    ]
+  },
+  {
+    "question": "What is the adjusted hazard ratio for neurodevelopmental disorders in children exposed to buprenorphine compared to those exposed to methadone during pregnancy?",
+    "gold_pmids": [
+      "41985931"
+    ],
+    "reference_answer": "Adjusted analyses suggested slightly lower hazards of any neurodevelopmental disorder associated with exposure to buprenorphine versus methadone (adjusted hazard ratio 0.81, 95% CI 0.70 to 0.94).",
+    "question_type": "prognosis",
+    "keywords": [
+      "buprenorphine",
+      "methadone",
+      "neurodevelopmental disorders",
+      "hazard ratio",
+      "pregnancy"
+    ]
+  },
+  {
+    "question": "What were the preliminary clinical outcomes observed in participants using the mental wellness chatbot for depression and anxiety?",
+    "gold_pmids": [
+      "41980262"
+    ],
+    "reference_answer": "Regression models showed significant pre-post reductions in depressive (Hedges g=-0.32) and anxiety (g=-0.32) symptoms, alongside modest improvements in distress and well-being. Baseline severity moderated improvement, with larger predicted reductions at higher PHQ-8 and GAD-7 baseline scores.",
+    "question_type": "treatment",
+    "keywords": [
+      "mental wellness chatbot",
+      "depression",
+      "anxiety",
+      "clinical outcomes",
+      "user experience"
+    ]
+  },
+  {
+    "question": "How do cognitive therapy and short-term dynamic psychotherapy compare in effectiveness for patients with severe depressive symptoms?",
+    "gold_pmids": [
+      "41833450"
+    ],
+    "reference_answer": "There was no evidence of superiority within any of the five severity domains, including severe depressive symptoms, indicating that cognitive therapy (CT) and short-term dynamic psychotherapy (STDP) were not significantly different in effectiveness for these patients.",
+    "question_type": "treatment",
+    "keywords": [
+      "cognitive therapy",
+      "short-term dynamic psychotherapy",
+      "depressive symptoms",
+      "community mental health",
+      "treatment effects"
+    ]
+  },
+  {
+    "question": "How does the treatment with atypical antipsychotics affect plasma hydrogen sulfide levels and cognitive function in schizophrenia patients?",
+    "gold_pmids": [
+      "41983245"
+    ],
+    "reference_answer": "After two months of atypical antipsychotic treatment, schizophrenia patients showed significant improvements in processing speed, working memory, visuospatial memory, attention, and executive function. Additionally, plasma H2S levels in patients after treatment were significantly elevated compared to baseline.",
+    "question_type": "treatment",
+    "keywords": [
+      "hydrogen sulfide",
+      "schizophrenia",
+      "atypical antipsychotics",
+      "cognitive function",
+      "treatment"
+    ]
+  },
+  {
+    "question": "What are the neuropsychiatric adverse event reporting patterns associated with tacrolimus and cyclosporine in solid organ transplantation?",
+    "gold_pmids": [
+      "41972119"
+    ],
+    "reference_answer": "The study identified 5,437 neuropsychiatric adverse event reports, with tacrolimus IR accounting for 71.9% and cyclosporine for 23.7%. Tacrolimus showed elevated reporting for tremor, while cyclosporine had elevated disproportionality for encephalopathy, insomnia, and anxiety.",
+    "question_type": "treatment",
+    "keywords": [
+      "neuropsychiatric toxicity",
+      "tacrolimus",
+      "cyclosporine",
+      "adverse events",
+      "pharmacovigilance"
+    ]
+  },
+  {
+    "question": "How does the integration of fNIRS-guided neurofeedback and art therapy with cognitive behavioral therapy compare to standard cognitive behavioral therapy in treating post-stroke depression?",
+    "gold_pmids": [
+      "41740752"
+    ],
+    "reference_answer": "The NF-AT+CBT group showed significantly greater HAMD-17 reduction at 12 weeks (-11.4 ± 2.5 vs. -8.6 ± 2.5, P < 0.001) and a higher remission rate (80% vs. 40%, P = 0.009) compared to standard CBT. Additionally, reductions in inflammatory markers IL-6 and TNF-α were also significantly larger in the NF-AT+CBT group (both P < 0.001).",
+    "question_type": "treatment",
+    "keywords": [
+      "post-stroke depression",
+      "cognitive behavioral therapy",
+      "fNIRS-guided neurofeedback",
+      "art therapy",
+      "randomized controlled trial"
+    ]
+  },
+  {
+    "question": "What are the effects of omega-3 fatty acids and chiropractic care on postpartum depression symptoms according to the study?",
+    "gold_pmids": [
+      "41726527"
+    ],
+    "reference_answer": "Omega-3 fatty acids and chiropractic care significantly reduced PHQ-9 scores in the treatment groups (omega-3 fatty acids: p<0.001, chiropractic care: p = 0.021), with no comparable improvements in controls. These findings suggest that these therapies may alleviate PPD symptoms.",
+    "question_type": "treatment",
+    "keywords": [
+      "Postpartum Depression",
+      "omega-3 fatty acids",
+      "chiropractic care",
+      "PHQ-9",
+      "Complementary and Integrative Health"
+    ]
+  },
+  {
+    "question": "What were the observed changes in emergency department visits and hospitalizations for patients undergoing mentalization-based therapy and dialectical behavior therapy for cluster B personality disorders?",
+    "gold_pmids": [
+      "41847402"
+    ],
+    "reference_answer": "Across both treatment modalities, ED visits decreased from 119 in the year prior to treatment to 37 during the first year of treatment (p < .001 for both). Hospitalizations were observed to decrease for patients in MBT (p < .05), while no clear change was seen in the DBT group (p = .595).",
+    "question_type": "treatment",
+    "keywords": [
+      "mentalization-based therapy",
+      "dialectical behavior therapy",
+      "cluster B personality disorders",
+      "emergency department visits",
+      "hospitalizations"
+    ]
+  },
+  {
+    "question": "What is the effect of benzodiazepines on the recurrence risk of catatonia?",
+    "gold_pmids": [
+      "41935752"
+    ],
+    "reference_answer": "Benzodiazepines, used in 88% of patients, were consistently protective against recurrence with an adjusted hazard ratio of 0.50 (95% confidence interval 0.27-0.94, p = 0.03).",
+    "question_type": "treatment",
+    "keywords": [
+      "catatonia",
+      "benzodiazepines",
+      "recurrence",
+      "hazard ratio",
+      "treatment strategies"
+    ]
+  },
+  {
+    "question": "What roles do central resident immune cells play in neuropsychiatric disorders according to the abstract?",
+    "gold_pmids": [
+      "41942685"
+    ],
+    "reference_answer": "Central resident immune cells, also known as the glial system, are crucial for understanding the pathological mechanisms underlying developmental disorders like major depressive disorder, autism spectrum disorder, and schizophrenia, as well as age-related conditions such as Alzheimer's and Parkinson's diseases.",
+    "question_type": "mechanism",
+    "keywords": [
+      "central resident immune system",
+      "neuropsychiatric disorders",
+      "glial cells",
+      "circadian rhythms",
+      "pathological mechanisms"
+    ]
+  }
+]

@@ -1,0 +1,740 @@
+INFO __main__: Evaluating question 1/20: 'What is the minimally clinically important difference (MCID)'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 7 / 20 candidates (1078 tokens, budget 1200)
+INFO packer: build_context: assembled 7 blocks, 1078 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1078
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1146  completion_tokens=46  citations=1
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1200 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1200 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1200
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1284  completion_tokens=52  citations=1
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1127 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1126 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1126
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1217  completion_tokens=46  citations=1
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 2/20: 'What were the outcomes of the Internet Cognitive Therapy for'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 8 / 20 candidates (1158 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1157 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1157
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1226  completion_tokens=149  citations=5
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1135 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1134 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1134
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1211  completion_tokens=107  citations=3
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1157 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1157 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1157
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1234  completion_tokens=110  citations=3
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 3/20: 'What is the proposed stepwise algorithm for the pharmacother'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 10 / 20 candidates (1172 tokens, budget 1200)
+INFO packer: build_context: assembled 10 blocks, 1172 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1172
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1261  completion_tokens=149  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 10 / 20 candidates (1149 tokens, budget 1200)
+INFO packer: build_context: assembled 10 blocks, 1148 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1148
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1233  completion_tokens=150  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 10 / 20 candidates (1114 tokens, budget 1200)
+INFO packer: build_context: assembled 10 blocks, 1114 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1114
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1203  completion_tokens=150  citations=2
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 4/20: 'What are the key drivers associated with burnout among publi'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 9 / 20 candidates (1129 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1128 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1128
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1203  completion_tokens=83  citations=3
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1199 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1199 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1199
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1268  completion_tokens=40  citations=1
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1116 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1115 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1115
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1187  completion_tokens=43  citations=2
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 5/20: 'What is the efficacy and tolerability of cannabidiol (CBD) i'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 9 / 20 candidates (1190 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1190 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1190
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1284  completion_tokens=150  citations=3
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1188 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1187 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1187
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1286  completion_tokens=144  citations=3
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 10 / 20 candidates (1169 tokens, budget 1200)
+INFO packer: build_context: assembled 10 blocks, 1169 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1169
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1268  completion_tokens=150  citations=3
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 6/20: 'What types of technology-based interventions are reviewed fo'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 10 / 20 candidates (1170 tokens, budget 1200)
+INFO packer: build_context: assembled 10 blocks, 1169 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1169
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1252  completion_tokens=49  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 11 / 20 candidates (1179 tokens, budget 1200)
+INFO packer: build_context: assembled 11 blocks, 1178 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1178
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1258  completion_tokens=52  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 11 / 20 candidates (1179 tokens, budget 1200)
+INFO packer: build_context: assembled 11 blocks, 1178 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1178
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1258  completion_tokens=49  citations=2
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 7/20: 'What is the minimum efficacy threshold for eLi12 to be consi'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 8 / 20 candidates (1196 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1195 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1195
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1283  completion_tokens=45  citations=1
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1188 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1188 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1188
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1272  completion_tokens=73  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1180 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1179 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1179
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1278  completion_tokens=78  citations=3
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 8/20: 'What are the psychometric properties of the Turkish version '
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 7 / 20 candidates (1108 tokens, budget 1200)
+INFO packer: build_context: assembled 7 blocks, 1107 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1107
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1174  completion_tokens=150  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 7 / 20 candidates (1093 tokens, budget 1200)
+INFO packer: build_context: assembled 7 blocks, 1092 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1092
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1162  completion_tokens=150  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 7 / 20 candidates (1108 tokens, budget 1200)
+INFO packer: build_context: assembled 7 blocks, 1107 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1107
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1174  completion_tokens=150  citations=1
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 9/20: 'How do self-management behaviors and depressive symptoms aff'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 8 / 20 candidates (1158 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1157 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1157
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1252  completion_tokens=150  citations=1
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1155 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1155 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1155
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1247  completion_tokens=127  citations=1
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1101 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1101 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1101
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1194  completion_tokens=150  citations=2
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 10/20: 'What is the primary outcome of the MIndfulness-based Neurofe'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 8 / 20 candidates (1174 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1174 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1174
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1276  completion_tokens=80  citations=1
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1187 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1187 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1187
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1288  completion_tokens=80  citations=1
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1099 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1098 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1098
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1201  completion_tokens=114  citations=2
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 11/20: 'What is the adjusted hazard ratio for neurodevelopmental dis'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 8 / 20 candidates (1183 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1182 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1182
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1266  completion_tokens=54  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1180 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1180 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1180
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1266  completion_tokens=54  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1180 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1179 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1179
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1266  completion_tokens=50  citations=1
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 12/20: 'What were the preliminary clinical outcomes observed in part'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 9 / 20 candidates (1156 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1156 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1156
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1227  completion_tokens=105  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1175 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1175 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1175
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1253  completion_tokens=96  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1135 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1134 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1134
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1204  completion_tokens=122  citations=2
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 13/20: 'How do cognitive therapy and short-term dynamic psychotherap'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 9 / 20 candidates (1192 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1192 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1192
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1263  completion_tokens=88  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1142 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1142 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1142
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1217  completion_tokens=99  citations=1
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1087 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1086 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1086
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1165  completion_tokens=98  citations=1
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 14/20: 'How does the treatment with atypical antipsychotics affect p'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 8 / 20 candidates (1101 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1101 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1101
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1191  completion_tokens=150  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1105 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1105 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1105
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1199  completion_tokens=150  citations=3
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1107 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1106 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1106
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1202  completion_tokens=150  citations=2
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 15/20: 'What are the neuropsychiatric adverse event reporting patter'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 8 / 20 candidates (1193 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1193 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1193
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1278  completion_tokens=150  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1200 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1200 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1200
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1290  completion_tokens=150  citations=1
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1119 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1118 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1118
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1209  completion_tokens=150  citations=1
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 16/20: 'How does the integration of fNIRS-guided neurofeedback and a'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 9 / 20 candidates (1157 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1157 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1157
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1260  completion_tokens=150  citations=0
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1120 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1120 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1120
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1217  completion_tokens=150  citations=0
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1109 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1109 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1109
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1210  completion_tokens=150  citations=1
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 17/20: 'What are the effects of omega-3 fatty acids and chiropractic'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 8 / 20 candidates (1111 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1110 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1110
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1180  completion_tokens=97  citations=3
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1138 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1137 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1137
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1202  completion_tokens=80  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1135 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1135 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1135
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1197  completion_tokens=80  citations=2
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 18/20: 'What were the observed changes in emergency department visit'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 8 / 20 candidates (1179 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1178 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1178
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1282  completion_tokens=104  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1183 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1182 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1182
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1260  completion_tokens=106  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1129 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1129 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1129
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1230  completion_tokens=108  citations=3
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 19/20: 'What is the effect of benzodiazepines on the recurrence risk'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 9 / 20 candidates (1170 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1170 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1170
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1249  completion_tokens=85  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1152 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1151 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1151
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1236  completion_tokens=94  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1177 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1176 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1176
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1259  completion_tokens=89  citations=2
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO __main__: Evaluating question 20/20: 'What roles do central resident immune cells play in neuropsy'
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_baseline: selected 9 / 20 candidates (1199 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1198 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1198
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1284  completion_tokens=93  citations=2
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 8 / 20 candidates (1100 tokens, budget 1200)
+INFO packer: build_context: assembled 8 blocks, 1100 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1100
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1187  completion_tokens=57  citations=1
+INFO retriever: retrieve: embedding query via OpenAI (model=text-embedding-3-small)
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+INFO retriever: retrieve: querying Pinecone directly  top_k=20  include_values=True  metric=cosine
+INFO retriever: retrieve: returned 20 candidates  embeddings_from_pinecone=20/20
+INFO features: add_embeddings: all 20 candidate embeddings already present (from direct Pinecone retrieval); skipping embed_documents call.
+INFO features: enrich_candidates: enriched 20 candidates (keywords=True recency=True pubtype=False mesh=False)
+INFO selector: select_greedy: selected 9 / 20 candidates (1158 tokens, budget 1200)
+INFO packer: build_context: assembled 9 blocks, 1158 tokens (budget 1200)
+INFO generator: Generator.generate: calling model=gpt-4o-mini context_tokens=1158
+INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+INFO generator: Generator.generate: done  prompt_tokens=1242  completion_tokens=91  citations=2
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
+INFO absl: Using default tokenizer.
