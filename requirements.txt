@@ -12,3 +12,5 @@ tiktoken
 openai
 rouge-score
 langchain-core
+fastapi
+uvicorn
