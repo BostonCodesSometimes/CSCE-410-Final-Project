@@ -1,20 +1,19 @@
 // src/api.ts
-import type { RunResult } from "./types";
+import type { RunResult, PipelineRequest } from "./types";
 
-export async function runPipeline(query: string): Promise<RunResult> {
+export async function runPipeline(params: PipelineRequest): Promise<RunResult> {
   const res = await fetch("http://localhost:8000/run", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      query,
-      method: "litepack",
-    }),
+    // We stringify the entire params object to match your required JSON body
+    body: JSON.stringify(params),
   });
 
   if (!res.ok) {
-    throw new Error("API request failed");
+    const errorData = await res.json().catch(() => ({}));
+    throw new Error(errorData.detail || "API request failed");
   }
 
   return res.json();

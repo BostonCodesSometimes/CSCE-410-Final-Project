@@ -53,3 +53,12 @@ export interface RunResult {
     total_ms: number;
   };
 }
+
+export interface PipelineRequest {
+  query: string;
+  method: string;
+  top_n: number;
+  budget: number;
+  use_keywords: boolean;
+  use_recency: boolean;
+}
