@@ -1,0 +1,12 @@
+metric,value
+queries_processed,100.0
+avg_initial_retrieved,20.0
+avg_after_dedup,12.61
+avg_after_adaptive,7.34
+avg_after_relevance_floor,6.63
+avg_final_mmr,4.49
+avg_candidate_reduction_pct,66.85
+avg_runtime_seconds,0.664
+balanced_queries,57.0
+confident_narrow_queries,36.0
+ambiguous_broad_queries,7.0
