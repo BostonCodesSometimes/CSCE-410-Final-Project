@@ -197,9 +197,9 @@ export default function App() {
               </div>
             </div>
 
-            <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 shadow">
+            {/* <div className="bg-zinc-900 border border-zinc-700 rounded-2xl p-5 shadow">
               <PipelineVisualizer result={result} />
-            </div>
+            </div> */}
           </motion.div>
         )}
 
