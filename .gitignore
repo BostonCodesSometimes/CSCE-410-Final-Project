@@ -1,7 +1,32 @@
+# Secrets & credentials
 pinecone_creds.txt
 .env
+
+# Python environments
 .venv/
 venv/
+.Python
+
+# Python cache
 __pycache__/
 *.pyc
-.Python
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# IDE
+.cursor/
+
+# Superseded / scratch run artifacts
+results/runs/eval_001/
+runs/
+
+# Loose result files (committed under named run dirs instead)
+results/runs/*.jsonl
+results/runs/*.log
+
+# Cache directories generated at runtime
+cache/
