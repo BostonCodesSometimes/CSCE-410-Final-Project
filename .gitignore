@@ -1,0 +1,7 @@
+pinecone_creds.txt
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.Python

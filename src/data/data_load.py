@@ -3,20 +3,22 @@ import time
 import datetime
 from Bio import Entrez
 from bs4 import BeautifulSoup
-from pinecone import Pinecone
 from langchain_pinecone import PineconeVectorStore
 from langchain_openai import OpenAIEmbeddings
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter # Added missing import
-from queries import all_queries
+from dotenv import load_dotenv
+from data.queries import all_queries
+from pinecone_settings import get_pinecone_config
+
+load_dotenv()
 
 # --- Configuration & Credentials ---
-NCBI_EMAIL = "add email"
-NCBI_API_KEY = "add key"
-PINECONE_API_KEY = "add key"
-OPENAI_API_KEY = "add key" # Required for embeddings
-INDEX_NAME = "lite-rag" 
-EMBEDDING_MODEL = "text-embedding-3-small"
+NCBI_EMAIL = os.environ.get("NCBI_EMAIL", "add email")
+NCBI_API_KEY = os.environ.get("NCBI_API_KEY", "add key")
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "add key")  # Required for embeddings
+
+PINECONE_API_KEY, INDEX_NAME, PINECONE_HOST, EMBEDDING_MODEL = get_pinecone_config()
 
 # Set environment variables for LangChain to pick up automatically
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
@@ -25,9 +27,6 @@ os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 # Set BioPython Entrez credentials
 Entrez.email = NCBI_EMAIL
 Entrez.api_key = NCBI_API_KEY
-
-# Initialize Pinecone client
-pc = Pinecone(api_key=PINECONE_API_KEY)
 
 # --- Define the Text Splitter ---
 text_splitter = RecursiveCharacterTextSplitter(
@@ -181,11 +180,14 @@ def pipe_to_pinecone(processed_chunks):
     
     print(f"Upserting {len(docs)} chunks to index: {INDEX_NAME}...")
     
-    vectorstore = PineconeVectorStore.from_documents(
-        documents=docs, 
-        embedding=embeddings, 
-        index_name=INDEX_NAME
-    )
+    kwargs = {
+        "documents": docs,
+        "embedding": embeddings,
+        "index_name": INDEX_NAME,
+    }
+    if PINECONE_HOST:
+        kwargs["host"] = PINECONE_HOST
+    vectorstore = PineconeVectorStore.from_documents(**kwargs)
     
     print("Upload to 'lite-rag' complete.")
 

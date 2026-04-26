@@ -1,0 +1,1162 @@
+Here is the isntructions for the **single consolidated final plan**. It keeps the project centered on ranking/filtering under a token budget, preserves the required comparison between **similarity**, **MMR**, and **LitePack**, and carries forward the corrected execution details around selector-owned greedy selection, metadata-aware optional features, deterministic ordering, header-aware token budgeting, config immutability, and empty-run handling. That matches your proposal and the supporting research direction much more closely than the earlier drafts.
+
+````markdown
+---
+name: LitePack-RAG Build Plan
+overview: Final execution plan for LitePack-RAG using a modular 12-file architecture. Retrieve -> enrich optionally -> rank modularly -> select under budget -> pack context -> generate -> evaluate. Three explicit methods (similarity, mmr, litepack) share the same retriever, corpus, generator, and budget.
+todos:
+  - id: p0-deps
+    content: "Fix requirements.txt: add numpy, scikit-learn, tiktoken, openai, rouge-score, langchain-core"
+    status: pending
+  - id: p1-config
+    content: Create config.py with all defaults (models, budgets, weights, feature toggles, cache paths)
+    status: pending
+  - id: p1-retriever
+    content: Create retriever.py with Candidate dataclass and Retriever.retrieve()
+    status: pending
+  - id: p2-features
+    content: Create features.py with enrich_candidates(), add_token_lengths(), add_keyword_overlap(), add_recency_feature()
+    status: pending
+  - id: p3-rankers
+    content: Create rankers.py with SimilarityRanker, MMRRanker, LitePackRanker, and marginal_score()
+    status: pending
+  - id: p4-selector
+    content: Create selector.py with SelectionResult, SelectionTraceStep, select_baseline(), select_greedy()
+    status: pending
+  - id: p5-packer
+    content: Create packer.py with count_tokens(), canonical header helpers, build_context(), PackedContext dataclass
+    status: pending
+  - id: p6-generator
+    content: Create generator.py with Generator class, generate(), build_prompt(), GenerationResult dataclass
+    status: pending
+  - id: p7-pipeline
+    content: Create pipeline.py with run_once(), compare_methods(), RunResult, and full argparse CLI
+    status: pending
+  - id: p8-metrics
+    content: Create metrics.py with recall_at_k, ndcg_at_k, redundancy_score, token metrics, rouge_l
+    status: pending
+  - id: p8-evaluation
+    content: Create evaluation.py runner with eval dataset loading, method loop, JSONL output, aggregate table
+    status: pending
+  - id: p8-golddata
+    content: "Manually create eval_data.json: 15-20 questions with gold_pmids and reference_answer"
+    status: pending
+  - id: p9-pubmed
+    content: "[Optional] Create pubmed_client.py for query-time publication type and MeSH fetching"
+    status: pending
+  - id: p9-features-mesh
+    content: "[Optional] Add add_publication_type_feature() and add_mesh_feature() to features.py"
+    status: pending
+  - id: p9-readme
+    content: Write README.md with architecture diagram, CLI usage, and experiment commands
+    status: pending
+isProject: false
+---
+
+# LitePack-RAG: Final Execution Build Plan
+
+## 1. Project intent to preserve
+
+This project studies one RAG step: selecting which retrieved chunks to send to the LLM under a fixed token budget.
+
+- **Baseline**: retrieve top candidates and include them in retrieval-score order until the budget is exhausted
+- **MMR**: use relevance plus redundancy control as an ablation
+- **LitePack**: use relevance, redundancy control, keyword coverage, length efficiency, and optional metadata bonuses
+
+This is a **ranking/filtering** contribution, not a new retriever or new LLM. The retriever, corpus, generator, prompt template, and budget stay fixed across methods. Only the ranking/filtering policy changes.
+
+## 2. Brief architecture critique
+
+The architecture is well-designed for a course project. Three notes before the roadmap:
+
+1. **Embedding bottleneck is the main risk.** `retriever.py` will not return raw embeddings from Pinecone `similarity_search`. Both `MMRRanker` and `LitePackRanker` need candidate embeddings. `features.py` must handle re-embedding returned chunk texts using the same embedding model and do so once, before any ranking loop.
+2. **Greedy inner loop cost is acceptable.** With `top_n=20` and selection of around 5 to 10 chunks, a greedy selector will call `marginal_score()` many times, but this is fine if embeddings are already in memory as numpy arrays.
+3. **`evaluation_skeleton.py` should be abandoned, not extended.** `evaluation.py` is the replacement. The old skeleton can remain as an artifact but should not be imported anywhere.
+
+## 3. Dependency graph
+
+```text
+config.py
+    ↓
+retriever.py      (Candidate dataclass lives here)
+    ↓
+features.py       (enrich Candidate objects, re-embed for MMR/LitePack)
+    ↓
+rankers.py        (uses enriched Candidates, scoring only)
+    ↓
+selector.py       (owns greedy loop, calls ranker.marginal_score)
+    ↓
+packer.py         (canonical labels/headers, token counting, build_context)
+    ↓
+generator.py      (takes PackedContext)
+    ↓
+pipeline.py       (orchestrates all of the above, CLI lives here)
+    ↓
+metrics.py        (standalone, takes RunResult fields)
+    ↓
+evaluation.py     (loads eval_data.json, calls pipeline, computes metrics, writes output)
+
+pubmed_client.py  (optional, imported by features.py only when metadata flags are set)
+````
+
+## 4. Python version policy
+
+**Recommended choice for execution:** recreate the venv with Python 3.10+ and keep the modern type syntax.
+
+Alternative:
+
+* keep Python 3.9, but then every new `.py` file must start with `from __future__ import annotations`
+
+Do not mix unresolved 3.9 runtime imports with `X | None` union syntax.
+
+**NLTK is intentionally not a dependency.**
+All tokenization for Jaccard overlap uses stdlib regex:
+`re.findall(r"[a-z0-9]+", text.lower())`
+
+Do not import `nltk`, do not call `word_tokenize`, and do not download `punkt`.
+
+## 5. Requirements changes
+
+Add these to `requirements.txt`:
+
+```text
+numpy
+scikit-learn
+tiktoken
+openai
+rouge-score
+langchain-core
+```
+
+Do **not** add:
+
+* `nltk`
+* `sentence-transformers`
+
+Stdlib modules you will use:
+
+* `dataclasses`
+* `typing`
+* `re`
+* `argparse`
+* `json`
+* `time`
+* `datetime`
+* `logging`
+
+## 6. File-by-file roadmap
+
+### Phase 0 - Dependencies
+
+#### `requirements.txt` - MODIFY - must build now
+
+Add the six packages above.
+
+Verification:
+
+```bash
+pip install -r requirements.txt
+```
+
+Exit condition:
+
+* install completes cleanly in the chosen venv
+
+---
+
+### Phase 1 - Foundation: `config.py` + `retriever.py`
+
+#### `config.py` - CREATE - must build now
+
+Single source of truth for defaults. CLI flags override these values at runtime.
+
+Use a `PipelineConfig` dataclass.
+
+Required fields:
+
+```python
+top_n: int = 20
+budget: int = 1800
+llm_model: str = "gpt-4o-mini"
+embedding_model: str = "text-embedding-3-small"
+embedding_dims: int = 512
+mmr_lambda: float = 0.6
+
+litepack_alpha: float = 1.0
+litepack_beta: float = 0.6
+litepack_gamma: float = 0.3
+litepack_delta: float = 0.2
+litepack_epsilon: float = 0.2
+
+meta_w_recency: float = 1.0
+meta_w_pubtype: float = 1.0
+meta_w_mesh: float = 1.0
+
+max_chunk_token_length: int = 300
+reference_year: int = field(default_factory=lambda: datetime.now().year)
+
+use_recency: bool = False
+use_keywords: bool = False
+use_publication_type: bool = False
+use_mesh: bool = False
+
+mesh_mode: str = "off"   # off | query_time | cached
+
+pubmed_cache_dir: str = "cache/pubmed"
+mesh_cache_dir: str = "cache/mesh"
+embedding_cache_dir: str = "cache/embeddings"
+
+ordering_policy: str = "score_desc"
+ranker: str = "litepack"      # similarity | mmr | litepack
+selector: str = "greedy"      # baseline | greedy
+```
+
+Rules:
+
+* never use raw global constants in other files
+* always pass `PipelineConfig`
+
+---
+
+#### `retriever.py` - CREATE - must build now
+
+Responsibilities:
+
+* embed the user query
+* query Pinecone
+* return `Candidate` objects
+* do nothing else
+
+##### `Candidate` dataclass
+
+```python
+@dataclass
+class Candidate:
+    chunk_id: str
+    doc_id: str
+    pmid: str
+    text: str
+    metadata: dict
+    retrieval_score: float
+    url: str
+    title: str
+    year: str
+    journal: str
+    keywords: list[str] = field(default_factory=list)
+    embedding: np.ndarray | None = None
+    token_length: int | None = None
+    keyword_overlap: float | None = None
+    recency_score: float | None = None
+    publication_type: str | None = None
+    publication_type_score: float | None = None
+    mesh_terms: list[str] = field(default_factory=list)
+    mesh_score: float | None = None
+    redundancy_score: float | None = None
+    final_score: float | None = None
+    score_breakdown: dict = field(default_factory=dict)
+```
+
+##### `Retriever` class
+
+* `__init__(self, config: PipelineConfig)`
+
+  * initialize `OpenAIEmbeddings`
+  * initialize `PineconeVectorStore`
+  * use `pinecone_settings.get_pinecone_config()`
+
+* `retrieve(self, query: str, top_n: int) -> tuple[list[Candidate], np.ndarray]`
+
+  * call `similarity_search_with_score(query, k=top_n)`
+  * also compute and return the query embedding as `np.ndarray`
+
+**Exact metadata mapping from the current corpus**:
+
+* `chunk_id = doc.metadata["id"]`
+* `pmid = doc.metadata["doc_id"]`
+* `doc_id = doc.metadata["doc_id"]`
+* `text = doc.page_content`
+* `title = doc.metadata.get("title", "")`
+* `year = doc.metadata.get("year", "N/A")`
+* `journal = doc.metadata.get("journal", "Unknown")`
+* `url = doc.metadata.get("url", "")`
+* `keywords = doc.metadata.get("keywords", [])`
+* `retrieval_score = float(score)`
+* `metadata = dict(doc.metadata)`
+
+**Empty-result contract**:
+
+* if nothing is retrieved, return `([], query_embedding)`
+* do not raise here
+
+##### Phase 1 test
+
+```bash
+python -c "
+from config import PipelineConfig
+from retriever import Retriever
+cfg = PipelineConfig()
+r = Retriever(cfg)
+candidates, q_emb = r.retrieve('depression treatment', top_n=5)
+for c in candidates:
+    print(c.pmid, c.title[:60], c.retrieval_score)
+"
+```
+
+Exit condition:
+
+* 5 candidates printed with non-null `pmid`, `title`, `retrieval_score`
+
+---
+
+### Phase 2 - Enrichment: `features.py`
+
+#### `features.py` - CREATE - must build now
+
+Responsibilities:
+
+* add feature signals to `Candidate` objects after retrieval
+* batch re-embed candidate texts
+* use only stdlib tokenization
+
+At top of file:
+
+```python
+import re
+_TOKEN_RE = re.compile(r"[a-z0-9]+")
+def _tokenize(text: str) -> set[str]:
+    return set(_TOKEN_RE.findall(text.lower())) if text else set()
+```
+
+##### Functions to implement
+
+* `add_token_lengths(candidates: list[Candidate], model: str) -> list[Candidate]`
+
+  * use `tiktoken.get_encoding("cl100k_base")`
+  * set `candidate.token_length`
+
+* `add_keyword_overlap(candidates: list[Candidate], query: str) -> list[Candidate]`
+
+  * `query_tokens = _tokenize(query)`
+  * primary candidate token set:
+
+    * `{k.lower() for k in c.keywords} | _tokenize(c.title)`
+  * fallback to `_tokenize(c.text)` only if primary set is empty
+  * compute Jaccard overlap
+  * set `candidate.keyword_overlap`
+  * if query or candidate tokens are empty, use `0.0`
+
+* `add_recency_feature(candidates: list[Candidate], config: PipelineConfig) -> list[Candidate]`
+
+  * use `config.reference_year`
+  * `recency_score = max(0.0, 1.0 - (config.reference_year - int(year)) / 20.0)`
+  * if year missing/unparseable, use `0.0`
+
+* `add_embeddings(candidates: list[Candidate], embeddings_model) -> list[Candidate]`
+
+  * batch embed `[c.text for c in candidates]`
+  * store `np.array(vector)` in `candidate.embedding`
+
+* `enrich_candidates(candidates, query, query_embedding, embeddings_model, config) -> list[Candidate]`
+
+  * always call:
+
+    * `add_token_lengths`
+    * `add_embeddings`
+  * conditionally call:
+
+    * `add_keyword_overlap` if `config.use_keywords`
+    * `add_recency_feature` if `config.use_recency`
+    * publication type / mesh stubs if enabled
+
+Optional stubs:
+
+* `add_publication_type_feature(...)`
+* `add_mesh_feature(...)`
+
+Both can safely set scores to `0.0` and log a warning until implemented.
+
+##### Phase 2 test
+
+```python
+candidates = enrich_candidates(candidates, query, q_emb, r.embeddings_model, cfg)
+assert all(c.token_length is not None for c in candidates)
+assert all(c.embedding is not None for c in candidates)
+```
+
+Exit condition:
+
+* every candidate has `token_length`
+* every candidate has `embedding`
+
+---
+
+### Phase 3 - Ranking: `rankers.py`
+
+#### `rankers.py` - CREATE - must build now
+
+Responsibilities:
+
+* scoring math only
+* no token counting
+* no budget logic
+* no greedy selection loop here
+
+At top of file, define a cosine helper that works with 2D arrays:
+
+* `cosine_similarity(a.reshape(1, -1), b.reshape(1, -1))[0][0]`
+
+##### `BaseRanker`
+
+Methods:
+
+* `rank(candidates, query_embedding, config) -> list[Candidate]`
+* `marginal_score(candidate, selected_set, query_embedding, config) -> tuple[float, dict]`
+
+##### `SimilarityRanker`
+
+* `rank()`: static sort by `retrieval_score` descending
+* `marginal_score()`: return retrieval score only
+
+##### `MMRRanker`
+
+* `rank()`: static pre-sort only by retrieval score
+* `marginal_score()`:
+
+  * `relevance = cosine_sim(candidate.embedding, query_embedding)`
+  * `redundancy = max(cosine_sim(candidate.embedding, s.embedding) for s in selected_set)` or `0.0`
+  * `score = config.mmr_lambda * relevance - (1 - config.mmr_lambda) * redundancy`
+  * return score and breakdown
+
+Do **not** call `mmr.mmr()` internally.
+`mmr.py` stays as a standalone reference implementation.
+
+##### `LitePackRanker`
+
+* `rank()`: static pre-sort only by retrieval score
+
+* `marginal_score()`:
+
+  * `relevance = cosine_sim(candidate.embedding, query_embedding)`
+  * `redundancy = max similarity to selected_set or 0.0`
+  * `coverage = candidate.keyword_overlap or 0.0`
+  * `length_penalty = min(candidate.token_length / config.max_chunk_token_length, 1.0)`
+
+Metadata bonus:
+
+* compute only from **enabled** metadata features
+* disabled features must not affect the denominator
+
+Reference implementation:
+
+```python
+metadata_components = []
+metadata_breakdown = {}
+
+if config.use_recency:
+    r = candidate.recency_score or 0.0
+    metadata_components.append((config.meta_w_recency, r))
+    metadata_breakdown["recency_score"] = r
+else:
+    metadata_breakdown["recency_score"] = 0.0
+
+if config.use_publication_type:
+    p = candidate.publication_type_score or 0.0
+    metadata_components.append((config.meta_w_pubtype, p))
+    metadata_breakdown["publication_type_score"] = p
+else:
+    metadata_breakdown["publication_type_score"] = 0.0
+
+if config.use_mesh:
+    m = candidate.mesh_score or 0.0
+    metadata_components.append((config.meta_w_mesh, m))
+    metadata_breakdown["mesh_score"] = m
+else:
+    metadata_breakdown["mesh_score"] = 0.0
+
+if metadata_components:
+    weighted_sum = sum(w * v for w, v in metadata_components)
+    weight_total = sum(w for w, _ in metadata_components)
+    metadata_bonus = weighted_sum / weight_total if weight_total > 0 else 0.0
+else:
+    metadata_bonus = 0.0
+
+score = (
+    config.litepack_alpha   * relevance
+    - config.litepack_beta  * redundancy
+    + config.litepack_gamma * coverage
+    - config.litepack_delta * length_penalty
+    + config.litepack_epsilon * metadata_bonus
+)
+```
+
+Breakdown keys:
+
+* `relevance`
+* `redundancy`
+* `coverage`
+* `length_penalty`
+* `metadata_bonus`
+* `recency_score`
+* `publication_type_score`
+* `mesh_score`
+
+**Important note:** `final_score` and `score_breakdown` are **not** expected to be populated by `ranker.rank()` for MMR or LitePack. They are populated after `selector.select_greedy()` chooses candidates.
+
+##### Phase 3 test
+
+```python
+ranker = LitePackRanker()
+ranked = ranker.rank(candidates, q_emb, cfg)
+
+assert len(ranked) == len(candidates)
+assert ranked[0].retrieval_score >= ranked[-1].retrieval_score
+
+score, breakdown = ranker.marginal_score(ranked[0], selected_set=[], query_embedding=q_emb, config=cfg)
+print(ranked[0].chunk_id, score, breakdown)
+
+assert isinstance(score, float)
+assert "relevance" in breakdown
+assert "redundancy" in breakdown
+assert "coverage" in breakdown
+assert "length_penalty" in breakdown
+assert "metadata_bonus" in breakdown
+```
+
+Exit condition:
+
+* static rank order returned
+* `marginal_score()` returns numeric score and expected keys
+
+---
+
+### Phase 4 - Selection: `selector.py`
+
+#### `selector.py` - CREATE - must build now
+
+Responsibilities:
+
+* budget-aware subset selection
+* greedy loop lives here and only here
+
+##### Dataclasses
+
+```python
+@dataclass
+class SelectionTraceStep:
+    step_index: int
+    candidate_id: str
+    label: str
+    token_length: int
+    effective_token_cost: int
+    marginal_score: float
+    score_breakdown: dict
+    tokens_used_so_far: int
+
+@dataclass
+class SelectionResult:
+    selected_candidates: list[Candidate]
+    tokens_used: int
+    token_budget: int
+    dropped_candidates: list[Candidate]
+    ordering_policy: str
+    trace: list[SelectionTraceStep]
+    selection_labels: dict[str, str]   # chunk_id -> S{n}
+```
+
+##### Canonical label/header ownership
+
+`selector.py` must import these from `packer.py`:
+
+* `format_chunk_header`
+* `assign_label`
+* `effective_token_cost`
+
+No other module may define its own header formatter.
+
+##### `select_baseline(candidates, budget, config) -> SelectionResult`
+
+* assume candidates are already in similarity order
+* for each candidate in order:
+
+  * `label = assign_label(len(selected_so_far))`
+  * `cost = effective_token_cost(c, label, config.llm_model)`
+  * include if budget allows
+  * record `selection_labels[c.chunk_id] = label`
+* no re-scoring
+* trace may remain empty
+
+##### `select_greedy(candidates, ranker, query_embedding, budget, config) -> SelectionResult`
+
+* at each step:
+
+  * `tentative_label = assign_label(len(selected_so_far))`
+  * evaluate each remaining candidate with:
+
+    * `ranker.marginal_score(candidate, selected_so_far, query_embedding, config)`
+    * `effective_token_cost(candidate, tentative_label, config.llm_model)`
+  * choose the highest-score candidate that fits
+  * on inclusion:
+
+    * append to selected set
+    * record `selection_labels[chosen.chunk_id] = tentative_label`
+    * record `SelectionTraceStep`
+    * set:
+
+      * `chosen.final_score = chosen_score`
+      * `chosen.score_breakdown = chosen_breakdown`
+* stop when nothing else fits
+
+##### `order_selected(selected, policy) -> list[Candidate]`
+
+Supported policies:
+
+* `score_desc`
+* `support_first`
+* `year_desc`
+* `original_rank`
+
+##### Phase 4 test
+
+```python
+result = select_greedy(candidates, LitePackRanker(), q_emb, budget=1800, config=cfg)
+assert result.tokens_used <= 1800
+assert len(result.trace) == len(result.selected_candidates)
+
+for c in result.selected_candidates:
+    assert c.final_score is not None
+    assert isinstance(c.score_breakdown, dict)
+
+print(f"Selected {len(result.selected_candidates)} / {len(candidates)} candidates, {result.tokens_used} tokens")
+```
+
+Exit condition:
+
+* budget respected
+* trace populated
+* selected candidates have `final_score` and `score_breakdown`
+
+---
+
+### Phase 5 - Context assembly: `packer.py`
+
+#### `packer.py` - CREATE - must build now
+
+Responsibilities:
+
+* canonical token counting
+* canonical label/header formatting
+* final prompt-context assembly only
+
+##### Functions
+
+* `count_tokens(text: str, model: str = "gpt-4o-mini") -> int`
+
+  * use `tiktoken.get_encoding("cl100k_base")`
+
+* `format_chunk_header(candidate: Candidate, label: str) -> str`
+
+  * return:
+
+    * `"[{label}] PMID: {candidate.pmid} | Year: {candidate.year} | Title: {candidate.title}"`
+
+* `assign_label(index_zero_based: int) -> str`
+
+  * return `S{index_zero_based + 1}`
+
+* `effective_token_cost(candidate: Candidate, label: str, model: str) -> int`
+
+  * count tokens on:
+
+    * `header + "\n" + candidate.text + "\n\n"`
+
+##### `PackedContext` dataclass
+
+```python
+@dataclass
+class PackedContext:
+    context_text: str
+    source_blocks: list[dict]
+    tokens_used: int
+    selected_pmids: list[str]
+    citation_map: dict[str, Candidate]
+```
+
+##### `build_context(selection_result: SelectionResult, config: PipelineConfig) -> PackedContext`
+
+Rules:
+
+* signature is exactly `(selection_result, config)`
+* no `citation_style` argument anywhere
+* reorder selected candidates using `order_selected(...)`
+* **reuse selection-time labels**:
+
+  * `label = selection_result.selection_labels[c.chunk_id]`
+* do **not** reassign labels from display order
+* build blocks:
+
+  * `header + "\n" + c.text`
+* join with `"\n\n"`
+* compute final token count with `count_tokens(context_text, config.llm_model)`
+* build:
+
+  * `source_blocks`
+  * `selected_pmids`
+  * `citation_map`
+
+##### Phase 5 test
+
+```python
+packed = build_context(selection_result, config=cfg)
+print(packed.context_text[:500])
+assert packed.tokens_used <= 1800
+assert len(packed.citation_map) == len(selection_result.selected_candidates)
+assert set(packed.citation_map.keys()) == set(selection_result.selection_labels.values())
+```
+
+Exit condition:
+
+* labels consistent
+* token count stays within budget
+* packed context built cleanly
+
+---
+
+### Phase 6 - Generation: `generator.py`
+
+#### `generator.py` - CREATE - must build now
+
+Responsibilities:
+
+* fixed generation layer
+* same model and prompt style for all methods
+
+##### `GenerationResult`
+
+```python
+@dataclass
+class GenerationResult:
+    answer_text: str
+    cited_source_labels: list[str]
+    raw_response: str
+    model_name: str
+    prompt_tokens: int
+    completion_tokens: int
+```
+
+##### `Generator` class
+
+* `__init__(self, config: PipelineConfig)`
+
+  * initialize `openai.OpenAI()`
+
+* `build_prompt(self, query: str, packed_context: PackedContext) -> str`
+
+  * system instruction:
+
+    * answer using only provided sources
+    * cite sources as `[S1]`, `[S2]`, etc.
+    * be concise and factual
+
+* `generate(self, query: str, packed_context: PackedContext, config: PipelineConfig) -> GenerationResult`
+
+  * call `client.chat.completions.create(...)`
+  * extract cited labels with regex:
+
+    * `r"\[S\d+\]"`
+
+##### Phase 6 test
+
+```python
+from config import PipelineConfig
+from generator import Generator
+from packer import PackedContext
+
+cfg = PipelineConfig()
+gen = Generator(cfg)
+
+mock_packed = PackedContext(
+    context_text="[S1] PMID: 12345678 | Year: 2022 | Title: Example Study\nSSRIs are first-line treatments for major depressive disorder.",
+    source_blocks=[{
+        "label": "S1",
+        "pmid": "12345678",
+        "year": "2022",
+        "title": "Example Study"
+    }],
+    tokens_used=40,
+    selected_pmids=["12345678"],
+    citation_map={}
+)
+
+prompt = gen.build_prompt("What are first-line treatments for major depressive disorder?", mock_packed)
+print(prompt[:400])
+assert "[S1]" in prompt
+```
+
+Exit condition:
+
+* prompt builds successfully and includes citation labels
+
+---
+
+### Phase 7 - Orchestration: `pipeline.py`
+
+#### `pipeline.py` - CREATE - must build now
+
+##### `RunResult`
+
+```python
+@dataclass
+class RunResult:
+    method_name: str
+    query: str
+    config: PipelineConfig
+    retrieved_candidates: list[Candidate]
+    ranked_candidates: list[Candidate]
+    selection_result: SelectionResult
+    packed_context: PackedContext
+    generation_result: GenerationResult
+    metrics: dict
+    timings: dict   # fixed keys: {"retrieval_ms", "enrichment_ms", "ranking_ms", "selection_ms", "packing_ms", "generation_ms", "total_ms"}
+```
+
+##### `run_once(query, config, retriever, embeddings_model, generator) -> RunResult`
+
+Steps:
+
+1. retrieve candidates and query embedding
+2. **empty-retrieval short-circuit**
+
+   * if `len(candidates) == 0`:
+
+     * log warning
+     * return stubbed:
+
+       * empty `SelectionResult`
+       * empty `PackedContext`
+       * stub `GenerationResult` with:
+
+         * `"No sources were retrieved for this query; unable to answer."`
+       * `metrics={"empty_retrieval": True}`
+       * only retrieval timing populated
+3. enrich candidates
+4. instantiate ranker from config
+5. static rank
+6. run selector from config
+7. **empty-selection short-circuit**
+
+   * if `len(selection_result.selected_candidates) == 0`:
+
+     * log warning
+     * return:
+
+       * real retrieved/ranked candidates
+       * actual `selection_result`
+       * empty `PackedContext`
+       * stub `GenerationResult` with:
+
+         * `"No candidates fit within the token budget."`
+       * `metrics={"empty_retrieval": False, "empty_selection": True}`
+8. build packed context
+9. generate answer
+10. compute inline metrics:
+
+* `tokens_used`
+* `chunks_selected`
+* `chunks_retrieved`
+
+11. return `RunResult`
+
+##### `compare_methods(query, methods, config, retriever, embeddings_model, generator) -> list[RunResult]`
+
+Use immutable config copies with `dataclasses.replace`:
+
+```python
+from dataclasses import replace
+
+METHOD_TO_RANKER_SELECTOR = {
+    "similarity": ("similarity", "baseline"),
+    "mmr":        ("mmr",        "greedy"),
+    "litepack":   ("litepack",   "greedy"),
+}
+
+results = []
+for method in methods:
+    ranker_name, selector_name = METHOD_TO_RANKER_SELECTOR[method]
+    method_config = replace(config, ranker=ranker_name, selector=selector_name)
+    results.append(run_once(query, method_config, retriever, embeddings_model, generator))
+```
+
+Never mutate shared config in place.
+
+##### Invalid-combination guard
+
+If the CLI manually requests an unsupported combination, either:
+
+* raise `ValueError("Unsupported ranker/selector combination")`, or
+* normalize it and log a warning
+
+Supported combinations for this project:
+
+* similarity + baseline
+* mmr + greedy
+* litepack + greedy
+
+##### CLI
+
+Use `argparse` and build one `PipelineConfig` from parsed args.
+
+Support flags such as:
+
+* `--query`
+* `--ranker`
+* `--selector`
+* `--budget`
+* `--top-n`
+* `--use-keywords`
+* `--use-recency`
+* `--use-publication-type`
+* `--use-mesh`
+* `--reference-year`
+* `--show-trace`
+* `--show-scores`
+* `--save-run`
+* `--compare similarity mmr litepack`
+
+##### JSON serialization
+
+Use a custom `NumpyEncoder` for save mode, or strip embeddings before serialization.
+
+Do **not** store embedding vectors in saved run files by default.
+
+##### Phase 7 test
+
+```bash
+python pipeline.py --query "What are treatments for PTSD?" --ranker litepack --selector greedy --budget 1800 --top-n 10 --use-keywords --use-recency --show-scores --show-trace
+```
+
+```bash
+python pipeline.py --query "What are treatments for PTSD?" --compare similarity mmr litepack --budget 1800
+```
+
+Exit condition:
+
+* both commands complete without errors
+* comparison table prints cleanly
+
+---
+
+### Phase 8 - Evaluation: `metrics.py` + `evaluation.py` + `eval_data.json`
+
+#### `metrics.py` - CREATE - must build now
+
+Import `count_tokens` from `packer.py`.
+
+##### Functions
+
+Retrieval-side:
+
+* `recall_at_k(candidates, gold_pmids, k)`
+* `ndcg_at_k(candidates, gold_pmids, k)`
+* `evidence_hit_rate(selected, gold_pmids)`
+
+Selection-side:
+
+* `redundancy_score(selected)`
+* `avg_pairwise_similarity(selected)`
+
+Efficiency:
+
+* `prompt_token_count(packed)`
+* `budget_utilization(packed, budget)`
+
+Answer-side:
+
+* `rouge_l(answer, reference)`
+* `keyword_support_rate(answer, context_text)`
+
+##### `evaluate_run(run_result: RunResult, gold_pmids: list[str], reference_answer: str) -> dict`
+
+Rules:
+
+* use `run_result.config.budget`
+* if `empty_retrieval`, return safe defaults
+* if `empty_selection`, return safe defaults
+* no empty-input crashes
+
+**Empty-run handling:** if selected is empty, metrics like redundancy, rouge, and keyword-support should return `0.0`, not raise.
+
+---
+
+#### `evaluation.py` - CREATE - must build now
+
+##### `load_eval_set(path: str) -> list[dict]`
+
+* validate each item has:
+
+  * `question`
+  * `gold_pmids`
+
+##### `run_evaluation(eval_set, methods, config, retriever, embeddings_model, generator, output_dir) -> None`
+
+Loop:
+
+* for each question:
+
+  * call `compare_methods(question, methods, config, retriever, embeddings_model, generator)`
+  * evaluate each run with `evaluate_run(...)`
+  * append lightweight result records
+
+Write:
+
+* `results.jsonl`
+* aggregate summary table by method
+
+##### Serialization rule
+
+Do not dump raw `RunResult` with embeddings attached.
+
+Recommended JSONL fields:
+
+* `question`
+* `method_name`
+* `budget`
+* `tokens_used`
+* `chunks_selected`
+* `selected_pmids`
+* `cited_source_labels`
+* `metrics`
+* `timings`
+
+##### Phase 8 test
+
+```bash
+python evaluation.py --eval-set eval_data.json --methods similarity mmr litepack --budget 1800 --top-n 20 --output-dir runs/eval_001
+```
+
+Start with 3 questions, then expand.
+
+Exit condition:
+
+* `results.jsonl` exists
+* aggregate table prints cleanly
+
+---
+
+#### `eval_data.json` - CREATE - manual
+
+Format:
+
+```json
+[
+  {
+    "question": "What pharmacological treatments are evidence-based for major depressive disorder?",
+    "gold_pmids": ["12345678", "23456789"],
+    "reference_answer": "SSRIs such as sertraline and fluoxetine are first-line pharmacological treatments...",
+    "question_type": "treatment",
+    "keywords": ["SSRI", "antidepressant", "depression", "treatment"]
+  }
+]
+```
+
+Scale:
+
+* 15 to 20 questions
+
+How to build:
+
+1. run similarity baseline on sample queries
+2. inspect titles and URLs
+3. identify relevant PMIDs manually
+4. write short reference answers
+
+---
+
+### Phase 9 - Optional extensions
+
+#### `pubmed_client.py` - CREATE - optional
+
+Responsibilities:
+
+* fetch publication type
+* fetch MeSH terms
+* batch fetch and cache by PMID
+
+Functions:
+
+* `fetch_publication_type(pmid)`
+* `fetch_mesh_terms(pmid)`
+* `fetch_batch(pmids)`
+
+##### Publication type score mapping
+
+```python
+PUB_TYPE_SCORES = {
+    "Randomized Controlled Trial": 1.0,
+    "Meta-Analysis": 1.0,
+    "Systematic Review": 0.9,
+    "Review": 0.7,
+    "Clinical Trial": 0.8,
+    "Observational Study": 0.5,
+    "Case Reports": 0.3,
+}
+```
+
+##### MeSH scoring
+
+Do **not** attempt query-side MeSH fetch via EFetch.
+
+Use candidate-side only:
+
+Option A, recommended:
+
+* overlap between normalized query tokens and `candidate.mesh_terms`
+
+Option B, simpler:
+
+* binary presence signal:
+
+  * `1.0` if `mesh_terms` exists
+  * else `0.0`
+
+Both avoid fragile query-side EFetch logic.
+
+## 7. Stepwise implementation order
+
+| Phase | Files                                           | Goal                       | Exit condition                       |
+| ----- | ----------------------------------------------- | -------------------------- | ------------------------------------ |
+| 0     | `requirements.txt`                              | all deps installable       | install works                        |
+| 1     | `config.py`, `retriever.py`                     | retrieve from Pinecone     | 5 candidates printed                 |
+| 2     | `features.py`                                   | enrich candidates          | embeddings and token lengths present |
+| 3     | `rankers.py`                                    | scoring works              | `marginal_score()` works cleanly     |
+| 4     | `selector.py`                                   | budget selection works     | selected candidates get final scores |
+| 5     | `packer.py`                                     | packed context built       | token count verified                 |
+| 6     | `generator.py`                                  | prompt and generation work | citation labels appear               |
+| 7     | `pipeline.py`                                   | full CLI works             | compare table prints                 |
+| 8     | `metrics.py`, `evaluation.py`, `eval_data.json` | eval works                 | aggregate metrics table prints       |
+| 9     | `pubmed_client.py`, metadata features           | optional ablations         | metadata toggle runs cleanly         |
+
+## 8. Integration pitfalls summary
+
+1. Re-embed candidates once in `features.py`, not inside loops.
+2. Use `cl100k_base` for token counting.
+3. Strip or encode numpy arrays before JSON serialization.
+4. Selector owns the greedy loop. Rankers do not.
+5. Budgeting must use canonical `effective_token_cost()`.
+6. Baseline must stay honest and simple.
+7. `evaluation_skeleton.py` must not be reused.
+8. `mmr.py` stays standalone as a reference.
+9. Always use a `PipelineConfig` object.
+10. Recency must come from config, not a hardcoded year.
+11. Keyword overlap must use structured fields before raw text.
+12. Labels must not drift between selection and packing.
+13. Empty retrieval and empty selection must short-circuit cleanly.
+14. No `nltk`.
+15. Use immutable config copies in `compare_methods()`.
+
+## 9. Minimal final story
+
+> We implemented LitePack-RAG, a modular medical IR pipeline that retrieves PubMed abstracts and selects context for an LLM under a fixed token budget. We compared three selection policies, similarity baseline, MMR, and full LitePack, on 15 manually labeled clinical questions. LitePack’s multi-factor selection score combined relevance, redundancy control, keyword coverage, and length efficiency, and produced lower redundancy and competitive or improved retrieval usefulness relative to the baseline, while preserving verifiable PMID-linked citations. The system also supports optional medical metadata enrichment such as recency, publication type, and MeSH without changing the retriever or generator.
+
+```
+
+```

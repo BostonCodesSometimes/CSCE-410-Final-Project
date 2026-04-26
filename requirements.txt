@@ -2,7 +2,13 @@ python-dotenv
 biopython
 beautifulsoup4
 lxml
-pinecone-client
+pinecone>=5.0.0,<7.0.0
 langchain-pinecone
 langchain-openai
 langchain-text-splitters
+numpy
+scikit-learn
+tiktoken
+openai
+rouge-score
+langchain-core
