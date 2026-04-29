@@ -1,0 +1,2627 @@
+[
+  {
+    "question": "What is the minimally clinically important difference (MCID) for the 2-Minute Walk Test in subacute stroke patients?",
+    "gold_pmids": [
+      "41984927"
+    ],
+    "reference_answer": "The 2MWT MCID was 33 meters (95% CI: 30-36 meters), with 87% sensitivity and 82% specificity. This MCID is a reliable and patient-centered benchmark for assessing mobility gains in subacute stroke populations.",
+    "question_type": "prognosis",
+    "keywords": [
+      "2-Minute Walk Test",
+      "minimally clinically important difference",
+      "subacute stroke",
+      "mobility gains",
+      "rehabilitation"
+    ]
+  },
+  {
+    "question": "What were the outcomes of the Internet Cognitive Therapy for Prolonged Grief (iCT-PG) intervention in terms of symptom reduction?",
+    "gold_pmids": [
+      "41873489"
+    ],
+    "reference_answer": "All participants completed treatment, with large reductions in Prolonged Grief Disorder (PGD) symptoms and comorbid symptoms of PTSD, depression, anxiety, and functional impairment observed. At post-treatment, 87.5% of participants demonstrated reliable improvement in PGD symptoms and recovery below clinical cut-offs.",
+    "question_type": "treatment",
+    "keywords": [
+      "Prolonged Grief Disorder",
+      "Internet Cognitive Therapy",
+      "symptom reduction",
+      "therapist-assisted",
+      "clinical outcomes"
+    ]
+  },
+  {
+    "question": "What is the proposed stepwise algorithm for the pharmacotherapy of late-life depression in older adults?",
+    "gold_pmids": [
+      "41714410"
+    ],
+    "reference_answer": "The proposed stepwise algorithm for the pharmacotherapy of late-life depression starts with serotonin-selective reuptake inhibitors. If the patient does not respond, the next step is switching to serotonin-norepinephrine reuptake inhibitors, followed by augmentation with aripiprazole as the preferred agent.",
+    "question_type": "treatment",
+    "keywords": [
+      "late-life depression",
+      "pharmacotherapy",
+      "stepwise algorithm",
+      "serotonin-selective reuptake inhibitors",
+      "augmentation"
+    ]
+  },
+  {
+    "question": "What are the key drivers associated with burnout among public safety personnel?",
+    "gold_pmids": [
+      "41987936"
+    ],
+    "reference_answer": "Key drivers of burnout among public safety personnel include operational factors such as occupational stress and organizational support, as well as non-organizational factors like traumatic events and work-family conflict.",
+    "question_type": "mechanism",
+    "keywords": [
+      "burnout",
+      "public safety workers",
+      "operational factors",
+      "moral injury",
+      "organizational support"
+    ]
+  },
+  {
+    "question": "What is the efficacy and tolerability of cannabidiol (CBD) in patients with schizophrenia spectrum disorders according to randomized controlled trials?",
+    "gold_pmids": [
+      "41948975"
+    ],
+    "reference_answer": "CBD did not show a clear benefit for psychosis symptoms in RCTs but was generally well tolerated. The effect size for CBD on psychosis symptom severity was not statistically significant, and the quality of the evidence ranged from low to very low.",
+    "question_type": "treatment",
+    "keywords": [
+      "cannabidiol",
+      "psychotic disorders",
+      "schizophrenia",
+      "randomized controlled trials",
+      "tolerability"
+    ]
+  },
+  {
+    "question": "What types of technology-based interventions are reviewed for reducing anxiety in youth?",
+    "gold_pmids": [
+      "41944825"
+    ],
+    "reference_answer": "The review discusses emerging digital approaches including mobile applications, internet-based cognitive-behavioral therapy programs, telehealth, gamified interventions, therapeutic podcasts, and virtual reality exposure interventions designed to reduce anxiety in youth.",
+    "question_type": "treatment",
+    "keywords": [
+      "pediatric anxiety",
+      "technology-based interventions",
+      "mobile applications",
+      "telehealth",
+      "cognitive-behavioral therapy"
+    ]
+  },
+  {
+    "question": "What is the minimum efficacy threshold for eLi12 to be considered cost-effective in the treatment of bipolar disorder?",
+    "gold_pmids": [
+      "41940526"
+    ],
+    "reference_answer": "A 2.5% reduction in the number of hospitalizations and suicides is sufficient for eLi12 to be considered cost-effective within one year of implementation. For a longer time horizon, less than 1% improvement would be sufficient within a three-year time horizon.",
+    "question_type": "treatment",
+    "keywords": [
+      "eLi12",
+      "bipolar disorder",
+      "cost-effectiveness",
+      "hospitalizations",
+      "suicides"
+    ]
+  },
+  {
+    "question": "What are the psychometric properties of the Turkish version of the PARDI-AR-Q for assessing ARFID in adolescents?",
+    "gold_pmids": [
+      "41906142"
+    ],
+    "reference_answer": "The PARDI-AR-Q showed good to excellent internal consistency, with a well-fitting four-factor structure, including severity of impact (α = 0.955), sensory-based avoidance (α = 0.96), concern about aversive consequences (α = 0.965), and lack of interest (α = 0.848). Test-retest analyses further supported the reliability of the scale.",
+    "question_type": "diagnosis",
+    "keywords": [
+      "PARDI-AR-Q",
+      "ARFID",
+      "reliability",
+      "validity",
+      "Turkish adolescents"
+    ]
+  },
+  {
+    "question": "How do self-management behaviors and depressive symptoms affect the risk of mild cognitive impairment in rural elderly with type 2 diabetes?",
+    "gold_pmids": [
+      "41987887"
+    ],
+    "reference_answer": "Improved self-management behaviors and less depressive symptoms were associated with lower risks of mild cognitive impairment (MCI) among the rural elderly with type 2 diabetes. Specifically, increased self-management behaviors and decreased depressive symptoms predicted better glycemic control, which in turn contributed to a lower incidence of MCI.",
+    "question_type": "mechanism",
+    "keywords": [
+      "self-management behaviors",
+      "depressive symptoms",
+      "mild cognitive impairment",
+      "glycemic control",
+      "type 2 diabetes"
+    ]
+  },
+  {
+    "question": "What is the primary outcome of the MIndfulness-based Neurofeedback to Augment DBT Psychotherapy for Borderline Personality Disorder (MIND-BPD) trial?",
+    "gold_pmids": [
+      "41860884"
+    ],
+    "reference_answer": "The primary outcome of the R61 phase of this trial is change in DMN connectivity between pre- and post-NF resting-state scans, as defined by increased within-network connectivity between the medial prefrontal cortex (mPFC) and posterior cingulate cortex (PCC), and increased connectivity between the mPFC and dorsolateral prefrontal cortex (dlPFC).",
+    "question_type": "treatment",
+    "keywords": [
+      "Borderline Personality Disorder",
+      "DBT",
+      "neurofeedback",
+      "DMN connectivity",
+      "mPFC"
+    ]
+  },
+  {
+    "question": "What is the adjusted hazard ratio for neurodevelopmental disorders in children exposed to buprenorphine compared to those exposed to methadone during pregnancy?",
+    "gold_pmids": [
+      "41985931"
+    ],
+    "reference_answer": "Adjusted analyses suggested slightly lower hazards of any neurodevelopmental disorder associated with exposure to buprenorphine versus methadone (adjusted hazard ratio 0.81, 95% CI 0.70 to 0.94).",
+    "question_type": "prognosis",
+    "keywords": [
+      "buprenorphine",
+      "methadone",
+      "neurodevelopmental disorders",
+      "hazard ratio",
+      "pregnancy"
+    ]
+  },
+  {
+    "question": "What were the preliminary clinical outcomes observed in participants using the mental wellness chatbot for depression and anxiety?",
+    "gold_pmids": [
+      "41980262"
+    ],
+    "reference_answer": "Regression models showed significant pre-post reductions in depressive (Hedges g=-0.32) and anxiety (g=-0.32) symptoms, alongside modest improvements in distress and well-being. Baseline severity moderated improvement, with larger predicted reductions at higher PHQ-8 and GAD-7 baseline scores.",
+    "question_type": "treatment",
+    "keywords": [
+      "mental wellness chatbot",
+      "depression",
+      "anxiety",
+      "clinical outcomes",
+      "user experience"
+    ]
+  },
+  {
+    "question": "How do cognitive therapy and short-term dynamic psychotherapy compare in effectiveness for patients with severe depressive symptoms?",
+    "gold_pmids": [
+      "41833450"
+    ],
+    "reference_answer": "There was no evidence of superiority within any of the five severity domains, including severe depressive symptoms, indicating that cognitive therapy (CT) and short-term dynamic psychotherapy (STDP) were not significantly different in effectiveness for these patients.",
+    "question_type": "treatment",
+    "keywords": [
+      "cognitive therapy",
+      "short-term dynamic psychotherapy",
+      "depressive symptoms",
+      "community mental health",
+      "treatment effects"
+    ]
+  },
+  {
+    "question": "How does the treatment with atypical antipsychotics affect plasma hydrogen sulfide levels and cognitive function in schizophrenia patients?",
+    "gold_pmids": [
+      "41983245"
+    ],
+    "reference_answer": "After two months of atypical antipsychotic treatment, schizophrenia patients showed significant improvements in processing speed, working memory, visuospatial memory, attention, and executive function. Additionally, plasma H2S levels in patients after treatment were significantly elevated compared to baseline.",
+    "question_type": "treatment",
+    "keywords": [
+      "hydrogen sulfide",
+      "schizophrenia",
+      "atypical antipsychotics",
+      "cognitive function",
+      "treatment"
+    ]
+  },
+  {
+    "question": "What are the neuropsychiatric adverse event reporting patterns associated with tacrolimus and cyclosporine in solid organ transplantation?",
+    "gold_pmids": [
+      "41972119"
+    ],
+    "reference_answer": "The study identified 5,437 neuropsychiatric adverse event reports, with tacrolimus IR accounting for 71.9% and cyclosporine for 23.7%. Tacrolimus showed elevated reporting for tremor, while cyclosporine had elevated disproportionality for encephalopathy, insomnia, and anxiety.",
+    "question_type": "treatment",
+    "keywords": [
+      "neuropsychiatric toxicity",
+      "tacrolimus",
+      "cyclosporine",
+      "adverse events",
+      "pharmacovigilance"
+    ]
+  },
+  {
+    "question": "How does the integration of fNIRS-guided neurofeedback and art therapy with cognitive behavioral therapy compare to standard cognitive behavioral therapy in treating post-stroke depression?",
+    "gold_pmids": [
+      "41740752"
+    ],
+    "reference_answer": "The NF-AT+CBT group showed significantly greater HAMD-17 reduction at 12 weeks (-11.4 ± 2.5 vs. -8.6 ± 2.5, P < 0.001) and a higher remission rate (80% vs. 40%, P = 0.009) compared to standard CBT. Additionally, reductions in inflammatory markers IL-6 and TNF-α were also significantly larger in the NF-AT+CBT group (both P < 0.001).",
+    "question_type": "treatment",
+    "keywords": [
+      "post-stroke depression",
+      "cognitive behavioral therapy",
+      "fNIRS-guided neurofeedback",
+      "art therapy",
+      "randomized controlled trial"
+    ]
+  },
+  {
+    "question": "What are the effects of omega-3 fatty acids and chiropractic care on postpartum depression symptoms according to the study?",
+    "gold_pmids": [
+      "41726527"
+    ],
+    "reference_answer": "Omega-3 fatty acids and chiropractic care significantly reduced PHQ-9 scores in the treatment groups (omega-3 fatty acids: p<0.001, chiropractic care: p = 0.021), with no comparable improvements in controls. These findings suggest that these therapies may alleviate PPD symptoms.",
+    "question_type": "treatment",
+    "keywords": [
+      "Postpartum Depression",
+      "omega-3 fatty acids",
+      "chiropractic care",
+      "PHQ-9",
+      "Complementary and Integrative Health"
+    ]
+  },
+  {
+    "question": "What were the observed changes in emergency department visits and hospitalizations for patients undergoing mentalization-based therapy and dialectical behavior therapy for cluster B personality disorders?",
+    "gold_pmids": [
+      "41847402"
+    ],
+    "reference_answer": "Across both treatment modalities, ED visits decreased from 119 in the year prior to treatment to 37 during the first year of treatment (p < .001 for both). Hospitalizations were observed to decrease for patients in MBT (p < .05), while no clear change was seen in the DBT group (p = .595).",
+    "question_type": "treatment",
+    "keywords": [
+      "mentalization-based therapy",
+      "dialectical behavior therapy",
+      "cluster B personality disorders",
+      "emergency department visits",
+      "hospitalizations"
+    ]
+  },
+  {
+    "question": "What is the effect of benzodiazepines on the recurrence risk of catatonia?",
+    "gold_pmids": [
+      "41935752"
+    ],
+    "reference_answer": "Benzodiazepines, used in 88% of patients, were consistently protective against recurrence with an adjusted hazard ratio of 0.50 (95% confidence interval 0.27-0.94, p = 0.03).",
+    "question_type": "treatment",
+    "keywords": [
+      "catatonia",
+      "benzodiazepines",
+      "recurrence",
+      "hazard ratio",
+      "treatment strategies"
+    ]
+  },
+  {
+    "question": "What roles do central resident immune cells play in neuropsychiatric disorders according to the abstract?",
+    "gold_pmids": [
+      "41942685"
+    ],
+    "reference_answer": "Central resident immune cells, also known as the glial system, are crucial for understanding the pathological mechanisms underlying developmental disorders like major depressive disorder, autism spectrum disorder, and schizophrenia, as well as age-related conditions such as Alzheimer's and Parkinson's diseases.",
+    "question_type": "mechanism",
+    "keywords": [
+      "central resident immune system",
+      "neuropsychiatric disorders",
+      "glial cells",
+      "circadian rhythms",
+      "pathological mechanisms"
+    ]
+  },
+  {
+    "question": "What was the effect of Medicaid expansion on frequent mental distress among lower-income adults from 2011 to 2024?",
+    "gold_pmids": [
+      "41972982"
+    ],
+    "reference_answer": "In the lower-income state-year panel, Medicaid expansion was not associated with a statistically significant change in frequent mental distress (ATT -0.0125; 95% CI -0.0521 to 0.0271; P = .54). Estimates in the higher-income and pooled panels were similarly small and not statistically significant.",
+    "question_type": "treatment",
+    "keywords": [
+      "Medicaid expansion",
+      "frequent mental distress",
+      "lower-income adults",
+      "Affordable Care Act",
+      "BRFSS"
+    ]
+  },
+  {
+    "question": "What is the effect of psychodynamic psychotherapy addressing the subjective body on depressive symptomatology compared to control conditions?",
+    "gold_pmids": [
+      "41969872"
+    ],
+    "reference_answer": "Post treatment PDP addressing the subjective body differed from control conditions with a standardized mean difference (SMD) = -0.53 [p = 0.017, 95% CI (-0.97, -0.09), I 2 = 89.12%]. At follow-up differences to control conditions remained to be present with SMD = -1.23 [p = 0.005, 95% CI (-2.10, -0.35), I 2 = 90.35%].",
+    "question_type": "treatment",
+    "keywords": [
+      "psychodynamic psychotherapy",
+      "depression",
+      "subjective body",
+      "randomized controlled trials",
+      "efficacy"
+    ]
+  },
+  {
+    "question": "What effects does chronic overexpression of human APOB have on neuroinflammatory responses in a transgenic mouse model?",
+    "gold_pmids": [
+      "41935644"
+    ],
+    "reference_answer": "Chronic hAPOB overexpression drives sustained neuroinflammatory and oxidative responses, potentially mimicking viral-like immune activation in the brain. It induced a robust and persistent upregulation of innate immune genes, particularly those associated with type I interferon responses, in both young and old transgenic mice.",
+    "question_type": "mechanism",
+    "keywords": [
+      "APOB",
+      "neuroinflammation",
+      "transgenic mice",
+      "type I interferon",
+      "oxidative stress"
+    ]
+  },
+  {
+    "question": "What occupational groups showed elevated odds of depressive and anxiety symptoms during and after the SARS-CoV-2 pandemic?",
+    "gold_pmids": [
+      "41984863"
+    ],
+    "reference_answer": "Symptom severity varied by occupation with elevated odds in traffic/logistics professions exclusively at t1 (OR=1.24, 95% CI 1.04-1.48) and healthcare professions exclusively at t0 (OR=1.08, 95% CI 1.01-1.16).",
+    "question_type": "epidemiology",
+    "keywords": [
+      "depression",
+      "anxiety",
+      "occupational risk",
+      "SARS-CoV-2",
+      "psychosocial stressors"
+    ]
+  },
+  {
+    "question": "What cognitive mechanism was found to be independently associated with symptom improvement in OCD across different therapeutic approaches?",
+    "gold_pmids": [
+      "41930538"
+    ],
+    "reference_answer": "The findings indicate that inferential confusion was independently associated with symptom improvement in OCD across therapeutic approaches.",
+    "question_type": "mechanism",
+    "keywords": [
+      "inferential confusion",
+      "OCD",
+      "symptom improvement",
+      "cognitive-behavioral therapy",
+      "randomized controlled trial"
+    ]
+  },
+  {
+    "question": "What laboratory traits were implicated in the association with PTSD according to the study?",
+    "gold_pmids": [
+      "41946832"
+    ],
+    "reference_answer": "Sixteen unique laboratory traits across the cardiometabolic, hematologic, hepatic, and immune systems were implicated in both genomic and phenotypic lab-wide association scans (LabWAS).",
+    "question_type": "diagnosis",
+    "keywords": [
+      "PTSD",
+      "biomarkers",
+      "laboratory traits",
+      "genomic",
+      "LabWAS"
+    ]
+  },
+  {
+    "question": "What are the psychometric properties of the Anxious Distress Assessment Scale (ADS) in patients with Major Depressive Disorder?",
+    "gold_pmids": [
+      "41975882"
+    ],
+    "reference_answer": "The ADS demonstrated strong diagnostic performance with sensitivity of 88.0%, specificity of 90.0%, and excellent internal consistency (Cronbach's α = 0.897). It also showed strong convergent validity, correlating significantly with the GAD-7 (r = 0.82) and MADRS (r = 0.68).",
+    "question_type": "diagnosis",
+    "keywords": [
+      "Anxious Distress Assessment Scale",
+      "Major Depressive Disorder",
+      "psychometric properties",
+      "diagnostic accuracy",
+      "convergent validity"
+    ]
+  },
+  {
+    "question": "What role does thriving from work play in the relationship between moral injury and post-traumatic growth among healthcare workers?",
+    "gold_pmids": [
+      "41989653"
+    ],
+    "reference_answer": "Thriving from work fully mediated the relationship between moral injury and post-traumatic growth, accounting for 91.67% of the total effect. Moral injury negatively affected post-traumatic growth by impairing thriving from work, while greater thriving from work reduced the adverse effects of moral injury on post-traumatic growth.",
+    "question_type": "mechanism",
+    "keywords": [
+      "moral injury",
+      "post-traumatic growth",
+      "thriving from work",
+      "healthcare workers",
+      "mediation"
+    ]
+  },
+  {
+    "question": "What percentage of overweight and obese students reported that their social life has been negatively impacted due to their weight?",
+    "gold_pmids": [
+      "41969721"
+    ],
+    "reference_answer": "53.2% reported their social life has been impacted negatively due to their weight.",
+    "question_type": "other",
+    "keywords": [
+      "childhood obesity",
+      "weight perception",
+      "bullying",
+      "social impact",
+      "students"
+    ]
+  },
+  {
+    "question": "What psychosocial interventions have shown a significant impact on stress reduction among breast cancer survivors?",
+    "gold_pmids": [
+      "41984493"
+    ],
+    "reference_answer": "The main findings showed a significant impact of cognitive-behavioral stress management, Iyengar yoga, mindfulness-based stress reduction, and relaxation/guided imagery on inflammatory biomarkers and perceived stress in breast cancer survivors.",
+    "question_type": "treatment",
+    "keywords": [
+      "breast cancer survivors",
+      "psychosocial interventions",
+      "stress reduction",
+      "cognitive-behavioral stress management",
+      "yoga"
+    ]
+  },
+  {
+    "question": "What factors are associated with higher levels of cyberbullying involvement among nursing students in Saudi Arabia and Egypt?",
+    "gold_pmids": [
+      "41956591"
+    ],
+    "reference_answer": "Egyptian students reported higher cybervictimization, cyberaggression, and overall involvement than Saudi students. Males scored higher than females on cybervictimization and cyberaggression, and students aged ≥23 had the highest mean scores in bivariate analyses.",
+    "question_type": "epidemiology",
+    "keywords": [
+      "cyberbullying",
+      "nursing students",
+      "cybervictimization",
+      "cyberaggression",
+      "gender"
+    ]
+  },
+  {
+    "question": "What are the identified themes related to nutrition-related health priorities for transgender and gender-diverse youth as perceived by key informants?",
+    "gold_pmids": [
+      "41966327"
+    ],
+    "reference_answer": "Four themes were identified: 1) Social and Psychological Barriers to Food and Nutrition Security for TGD YYA; 2) Social and Psychological Impacts on Nutrition Attitudes and Behaviors; 3) Gender-Affirming Nutrition Attitudes and Behaviors; 4) Health Promotion Strategies for TGD YYA.",
+    "question_type": "other",
+    "keywords": [
+      "transgender youth",
+      "nutrition challenges",
+      "health promotion",
+      "gender-affirming",
+      "food insecurity"
+    ]
+  },
+  {
+    "question": "What effect does hyperbaric oxygen therapy have on sleep quality in patients with PTSD, long COVID, and healthy aging?",
+    "gold_pmids": [
+      "41982416"
+    ],
+    "reference_answer": "Hyperbaric oxygen therapy (HBOT) was associated with improvement in sleep quality across diverse conditions, with significant gains observed in subjective sleep quality, sleep latency, and disturbances in all groups. The greatest benefit was seen in patients with poorer baseline sleep, particularly those with PTSD.",
+    "question_type": "treatment",
+    "keywords": [
+      "hyperbaric oxygen therapy",
+      "sleep quality",
+      "PTSD",
+      "long COVID",
+      "aging"
+    ]
+  },
+  {
+    "question": "What were the effects of subanesthetic ketamine infusions on depressive symptoms and hemodynamic stability in critically ill ICU patients?",
+    "gold_pmids": [
+      "41989186"
+    ],
+    "reference_answer": "Subanesthetic ketamine improved specific depressive symptoms in critically ill ICU patients without significant hemodynamic instability. Hemodynamic parameters remained stable, with heart rate increasing transiently at 15-30 minutes post-infusion and returning to baseline by 60-90 minutes.",
+    "question_type": "treatment",
+    "keywords": [
+      "ketamine",
+      "depressive symptoms",
+      "ICU patients",
+      "hemodynamic changes",
+      "treatment-resistant depression"
+    ]
+  },
+  {
+    "question": "What are some of the emerging therapeutic approaches for PTSD mentioned in the abstract?",
+    "gold_pmids": [
+      "41792251"
+    ],
+    "reference_answer": "Emerging approaches target the hypothalamic-pituitary-adrenal (HPA) axis, adrenergic signaling, glutamatergic/GABAergic systems, endocannabinoids, neuropeptides, and serotonergic-based psychedelics. Rapid-acting interventions such as ketamine and MDMA-assisted psychotherapy have shown promise in treating PTSD.",
+    "question_type": "treatment",
+    "keywords": [
+      "PTSD",
+      "therapeutic approaches",
+      "ketamine",
+      "MDMA",
+      "neurobiology"
+    ]
+  },
+  {
+    "question": "What are the key considerations for implementing measurement-based care in evidence-based parenting interventions for child mental health?",
+    "gold_pmids": [
+      "41989503"
+    ],
+    "reference_answer": "Key considerations for implementing measurement-based care (MBC) in evidence-based parenting interventions (EBPIs) include collecting multi-informant data, selecting measures, administering measures, sharing and integrating multiple perspectives, examining trajectories of change, optimising clinical decision making, considering organisational factors, and using MBC with culturally and linguistically diverse populations.",
+    "question_type": "treatment",
+    "keywords": [
+      "measurement-based care",
+      "evidence-based parenting interventions",
+      "child mental health",
+      "multi-informant data",
+      "clinical decision making"
+    ]
+  },
+  {
+    "question": "What role does hopelessness play in the relationship between psychological resilience and posttraumatic embitterment symptoms among earthquake survivors?",
+    "gold_pmids": [
+      "41987613"
+    ],
+    "reference_answer": "Hopelessness was found to mediate the relationship between psychological resilience and embitterment. Together, psychological resilience and hopelessness accounted for 43.7% of the variance in embitterment.",
+    "question_type": "mechanism",
+    "keywords": [
+      "hopelessness",
+      "psychological resilience",
+      "posttraumatic embitterment",
+      "earthquake survivors",
+      "PTED"
+    ]
+  },
+  {
+    "question": "What is the primary outcome measured in the HealthyTogether trial for Veterans participating in the weight management program?",
+    "gold_pmids": [
+      "41985657"
+    ],
+    "reference_answer": "The primary outcome is study-measured Veteran weight change in pounds at 6 months.",
+    "question_type": "treatment",
+    "keywords": [
+      "weight management",
+      "Veteran",
+      "BMI",
+      "HealthyTogether",
+      "intervention"
+    ]
+  },
+  {
+    "question": "What were the main findings regarding patient satisfaction and compliance in the study of an IoT-based rehabilitation system?",
+    "gold_pmids": [
+      "41982816"
+    ],
+    "reference_answer": "Overall satisfaction averaged 4.28/5; comfort rated the highest, durability the lowest. The implementation of the IoT-based system facilitated individualized feedback and clinical decision-making while maintaining high patient adherence and satisfaction.",
+    "question_type": "treatment",
+    "keywords": [
+      "IoT-based system",
+      "patient satisfaction",
+      "rehabilitation",
+      "compliance",
+      "individualized feedback"
+    ]
+  },
+  {
+    "question": "How do subjective memory concerns relate to plasma biomarkers in different racial/ethnic groups of older adults?",
+    "gold_pmids": [
+      "41971641"
+    ],
+    "reference_answer": "Higher subjective memory concerns (SMC) were associated with higher plasma p-tau181 and NfL levels in non-Hispanic White (NHW) participants only. Additionally, higher SMC related to lower objective memory for Hispanic/Latino (H/L) and NHW participants, indicating variability in the associations among SMC, plasma biomarkers, and memory tests by racial/ethnic group.",
+    "question_type": "mechanism",
+    "keywords": [
+      "subjective memory concerns",
+      "plasma biomarkers",
+      "racial/ethnic diversity",
+      "Alzheimer's disease",
+      "older adults"
+    ]
+  },
+  {
+    "question": "What strategies do patients with major depressive disorder report using to manage sleep disturbances in outpatient psychiatric care?",
+    "gold_pmids": [
+      "41985111"
+    ],
+    "reference_answer": "Participants described a range of strategies to manage sleep disturbances, including prescribed sleep medication, physical activity, relaxation techniques, and, in some cases, self-directed use of alcohol or cannabis.",
+    "question_type": "treatment",
+    "keywords": [
+      "major depressive disorder",
+      "sleep disturbances",
+      "pharmacological strategies",
+      "non-pharmacological strategies",
+      "outpatient psychiatric care"
+    ]
+  },
+  {
+    "question": "What are the coping responses reported by primary caregivers of individuals with severe mental illness in rural India?",
+    "gold_pmids": [
+      "41960528"
+    ],
+    "reference_answer": "Coping responses ranged from problem-focused strategies such as information-seeking and structured caregiving routines to emotion-focused and faith-based practices.",
+    "question_type": "other",
+    "keywords": [
+      "caregiver burden",
+      "severe mental illness",
+      "coping responses",
+      "rural India",
+      "psychoeducation"
+    ]
+  },
+  {
+    "question": "How do probiotics influence adult neurogenesis and synaptic plasticity in the context of affective disorders?",
+    "gold_pmids": [
+      "41898284"
+    ],
+    "reference_answer": "Probiotics, particularly strains from the Lactobacillus and Bifidobacterium genera, promote hippocampal neurogenesis and synaptic function through epigenetic regulation via short-chain fatty acids (SCFAs), modulation of neuroinflammatory pathways, and regulation of neurotransmitter receptor expression. Clinical evidence indicates that probiotic supplementation leads to significant reductions in depressive and anxiety symptoms, correlating with changes in gut microbiota composition and peripheral neuroplasticity biomarkers like brain-derived neurotrophic factor (BDNF).",
+    "question_type": "mechanism",
+    "keywords": [
+      "probiotics",
+      "neurogenesis",
+      "synaptic plasticity",
+      "affective disorders",
+      "gut microbiota"
+    ]
+  },
+  {
+    "question": "What is the association between ADHD and the risk of attempted suicide in adolescents?",
+    "gold_pmids": [
+      "41895612"
+    ],
+    "reference_answer": "ADHD significantly increases the risk of suicide attempts in adolescents, independent of common psychiatric comorbidities. This association was observed even after excluding significant psychiatric comorbidities such as depression and borderline personality disorder.",
+    "question_type": "prognosis",
+    "keywords": [
+      "ADHD",
+      "suicide attempts",
+      "adolescents",
+      "psychiatric comorbidities",
+      "risk factor"
+    ]
+  },
+  {
+    "question": "What are the common complications and health status reported by patients with chronic hypoparathyroidism?",
+    "gold_pmids": [
+      "41987889"
+    ],
+    "reference_answer": "Patients with chronic hypoparathyroidism reported clinical symptoms requiring medical intervention in 32% of cases, with 36% having visited an emergency department due to severe hypocalcemia. Additionally, there was a higher prevalence of renal insufficiency, depression, and anxiety compared to population-based controls, indicating a significant impact on their health status.",
+    "question_type": "epidemiology",
+    "keywords": [
+      "chronic hypoparathyroidism",
+      "complications",
+      "health status",
+      "renal insufficiency",
+      "depression"
+    ]
+  },
+  {
+    "question": "How does chronic morphine affect long-term depression (LTD) in VTA GABA cells of adolescent versus adult mice?",
+    "gold_pmids": [
+      "41831711"
+    ],
+    "reference_answer": "Chronic morphine eliminated LTD in both adolescent mice and in only ∼50% of adult VTA GABA cells. Seven-day withdrawal following morphine treatment reversed LTD elimination in all adolescent GABA cells, but not in adults.",
+    "question_type": "mechanism",
+    "keywords": [
+      "morphine",
+      "long-term depression",
+      "VTA GABA cells",
+      "adolescent",
+      "adult"
+    ]
+  },
+  {
+    "question": "What is a significant risk factor for fatal suicidal behavior in Bipolar II patients after their first hospitalization?",
+    "gold_pmids": [
+      "41966061"
+    ],
+    "reference_answer": "A history of previous violent suicide attempt was detected as a risk factor significantly associated with fatal suicidal behavior in Bipolar II patients.",
+    "question_type": "prognosis",
+    "keywords": [
+      "Bipolar II disorder",
+      "fatal suicide behavior",
+      "risk factors",
+      "violent method",
+      "previous suicide attempt"
+    ]
+  },
+  {
+    "question": "How do metacognitive abilities differ between cognitively preserved and cognitively impaired patients with post-COVID condition?",
+    "gold_pmids": [
+      "41878039"
+    ],
+    "reference_answer": "PCC patients showed reduced accuracy in both local and global metacognition compared to healthy controls. PCC-CI patients significantly overestimated their performance in attention, executive function, and memory, while both PCC-CP and PCC-CI underestimated their global cognitive abilities compared to healthy controls.",
+    "question_type": "mechanism",
+    "keywords": [
+      "metacognition",
+      "cognitive impairment",
+      "post-COVID condition",
+      "fatigue",
+      "depression"
+    ]
+  },
+  {
+    "question": "What is the recommended daily dosage of DHA plus EPA for nursing mothers?",
+    "gold_pmids": [
+      "30000958"
+    ],
+    "reference_answer": "Current dietary recommendations for nursing mothers is 250 to 375 mg daily of DHA plus EPA. Lactating women require a daily dosage of about 1 gram DHA plus EPA to reach a milk DHA plus EPA of 1 gram/dL at 4 weeks postpartum.",
+    "question_type": "treatment",
+    "keywords": [
+      "DHA",
+      "EPA",
+      "nursing mothers",
+      "supplementation",
+      "breastmilk"
+    ]
+  },
+  {
+    "question": "What is the relationship between suicide literacy and attitudes toward seeking professional psychological help among nursing students?",
+    "gold_pmids": [
+      "41986446"
+    ],
+    "reference_answer": "The findings indicated that suicide literacy was significantly and positively correlated with attitudes toward seeking professional psychological help (r = 0.185, p ≤ 0.001), suggesting that higher levels of knowledge were associated with more favorable attitudes.",
+    "question_type": "other",
+    "keywords": [
+      "suicide literacy",
+      "nursing students",
+      "psychological help",
+      "attitudes",
+      "correlation"
+    ]
+  },
+  {
+    "question": "What was the impact of integrating a bilingual dementia screening tool into the electronic health record on new dementia diagnoses in primary care?",
+    "gold_pmids": [
+      "41984500"
+    ],
+    "reference_answer": "The integration of a brief, culturally adapted dementia screening tool (DST) into primary care improved new dementia diagnoses from 0.75% pre-DST to 2.45% among those screening positive (adjusted OR 2.99; p = 0.01).",
+    "question_type": "diagnosis",
+    "keywords": [
+      "dementia",
+      "screening tool",
+      "primary care",
+      "diagnosis",
+      "EHR"
+    ]
+  },
+  {
+    "question": "What is the association between depression and diabetes in South Korea compared to the US?",
+    "gold_pmids": [
+      "41967196"
+    ],
+    "reference_answer": "Depression was associated with higher odds of diabetes in South Korea (wOR 1.46, [95% CI 1.19-1.80]) but not in the US (1.26, [0.96-1.64]).",
+    "question_type": "epidemiology",
+    "keywords": [
+      "depression",
+      "diabetes",
+      "South Korea",
+      "US",
+      "PHQ-9"
+    ]
+  },
+  {
+    "question": "What is the relationship between long-term opioid therapy and the risk of new-onset depression in head and neck cancer patients after surgery?",
+    "gold_pmids": [
+      "41988904"
+    ],
+    "reference_answer": "Long-term opioid therapy (LTOT) was associated with a 20% increased risk of new-onset depression compared with opioid use for 1-30 days. The rates of new-onset depression were higher for patients receiving LTOT, with 88.4 cases per 1000 person-years.",
+    "question_type": "prognosis",
+    "keywords": [
+      "opioid therapy",
+      "depression",
+      "head and neck cancer",
+      "surgery",
+      "risk"
+    ]
+  },
+  {
+    "question": "What is the prognostic value of the atherogenic index of plasma (AIP) in predicting metabolic syndrome in schizophrenia patients taking antipsychotics?",
+    "gold_pmids": [
+      "41984566"
+    ],
+    "reference_answer": "AIP had a higher area under the curve (AUC) of 0.821, indicating it is the most sensitive marker of metabolic syndrome in patients with schizophrenia taking antipsychotics. The optimal cut-off point for metabolic syndrome prediction using AIP was 0.24, with a sensitivity of 81.2% and specificity of 70.4%.",
+    "question_type": "prognosis",
+    "keywords": [
+      "atherogenic index",
+      "metabolic syndrome",
+      "schizophrenia",
+      "antipsychotics",
+      "sensitivity"
+    ]
+  },
+  {
+    "question": "What are the effects of valproic acid on the expression of genes involved in histone modifications in HeLa cells?",
+    "gold_pmids": [
+      "41955765"
+    ],
+    "reference_answer": "Valproic acid (VPA) induced the most extensive transcriptional changes, with differential expression of 17 out of 82 genes, predominantly involved in histone modifications. VPA upregulated HDAC1, HDAC2, HDAC9, HDAC11, KDM5B, and PAK1 mRNA levels, and also induced direct inhibition of total HDAC activity.",
+    "question_type": "mechanism",
+    "keywords": [
+      "valproic acid",
+      "histone modifications",
+      "gene expression",
+      "HeLa cells",
+      "HDAC"
+    ]
+  },
+  {
+    "question": "What potential benefits do SGLT2 inhibitors offer in the treatment of major depressive disorder (MDD) in patients with type 2 diabetes (T2DM)?",
+    "gold_pmids": [
+      "41878679"
+    ],
+    "reference_answer": "SGLT2 inhibitors may intervene in multiple key pathways central to the comorbidity of MDD and T2DM by mitigating neuroinflammation and oxidative stress, inhibiting apoptosis, and enhancing synaptic plasticity. Current preclinical and observational studies have already demonstrated significant potential for their application in the psychiatric field.",
+    "question_type": "treatment",
+    "keywords": [
+      "SGLT2 inhibitors",
+      "major depressive disorder",
+      "type 2 diabetes",
+      "neuroinflammation",
+      "oxidative stress"
+    ]
+  },
+  {
+    "question": "How does discrimination relate to depressive symptoms in transgender/gender-diverse and lesbian, gay, or bisexual individuals?",
+    "gold_pmids": [
+      "41985756"
+    ],
+    "reference_answer": "Both transgender/gender-diverse (TGGD) and lesbian, gay, or bisexual (LGB) individuals reported substantial discrimination exposure, with greater discrimination—particularly social isolation and vicarious trauma—associated with more severe depression. Group identity alone did not independently predict depressive symptom severity.",
+    "question_type": "mechanism",
+    "keywords": [
+      "discrimination",
+      "depressive symptoms",
+      "transgender",
+      "lesbian",
+      "mental health"
+    ]
+  },
+  {
+    "question": "What is the risk of major neuropsychiatric disorders in pediatric patients with delirium compared to those without delirium?",
+    "gold_pmids": [
+      "41987605"
+    ],
+    "reference_answer": "Pediatric patients with delirium demonstrate a 2.15-fold higher risk of neuropsychiatric disorders than controls without delirium. The 5-year freedom from these disorders was 68.5% in the study cohort, compared to 49.8% in the control cohort.",
+    "question_type": "prognosis",
+    "keywords": [
+      "pediatric delirium",
+      "neuropsychiatric disorders",
+      "hazard ratio",
+      "risk",
+      "long-term follow-up"
+    ]
+  },
+  {
+    "question": "What gene was most consistently altered in the brains of individuals who died by suicide and was related to the rs62474683 genotype?",
+    "gold_pmids": [
+      "41942773"
+    ],
+    "reference_answer": "Forkhead box P2 (FOXP2) was the most consistently altered in brains of individuals who died by suicide and its expression was related to rs62474683 genotype.",
+    "question_type": "mechanism",
+    "keywords": [
+      "suicidal behavior",
+      "rs62474683",
+      "FOXP2",
+      "gene expression",
+      "depression"
+    ]
+  },
+  {
+    "question": "What is the primary pharmacological effect of LSD in the context of treating major depressive disorder?",
+    "gold_pmids": [
+      "41963179"
+    ],
+    "reference_answer": "LSD's primary pharmacological effect is modulation of the 5-HT2A serotonin receptor and the glutamatergic system, both of which have been involved in neuroplasticity.",
+    "question_type": "mechanism",
+    "keywords": [
+      "LSD",
+      "major depressive disorder",
+      "5-HT2A serotonin receptor",
+      "glutamatergic system",
+      "neuroplasticity"
+    ]
+  },
+  {
+    "question": "What role do P2X receptors play in the pathophysiology of major depressive disorder?",
+    "gold_pmids": [
+      "41979804"
+    ],
+    "reference_answer": "P2X receptors, particularly P2X7, are key contributors to the pathophysiology of major depressive disorder by driving microglial activation and neuroinflammation, which leads to reductions in BDNF and neuroplasticity. Targeting P2X receptors offers a distinct approach to understanding and treating depression.",
+    "question_type": "mechanism",
+    "keywords": [
+      "P2X receptors",
+      "major depressive disorder",
+      "neuroinflammation",
+      "microglial activation",
+      "BDNF"
+    ]
+  },
+  {
+    "question": "What effects does Mindfulness Based Stress Reduction have on pain severity and quality of life in individuals with Fibromyalgia?",
+    "gold_pmids": [
+      "41906320"
+    ],
+    "reference_answer": "Mindfulness Based Stress Reduction (MBSR) improves pain catastrophising and quality of life in people with Fibromyalgia at short and long term follow up; however, it does not significantly reduce pain severity compared to active control.",
+    "question_type": "treatment",
+    "keywords": [
+      "Mindfulness Based Stress Reduction",
+      "Fibromyalgia",
+      "pain severity",
+      "quality of life",
+      "meta-analysis"
+    ]
+  },
+  {
+    "question": "What is a major cause of school refusal in children and adolescents?",
+    "gold_pmids": [
+      "41974181"
+    ],
+    "reference_answer": "Social anxiety disorder (SAD) is a major cause of school refusal in children and adolescents that is still poorly recognized and treated.",
+    "question_type": "epidemiology",
+    "keywords": [
+      "social anxiety disorder",
+      "school refusal",
+      "children",
+      "adolescents",
+      "treatment"
+    ]
+  },
+  {
+    "question": "What statistical tests were used to analyze the differences in reference choice errors among the groups in the study of schizophrenia spectrum disorders?",
+    "gold_pmids": [
+      "41984567"
+    ],
+    "reference_answer": "The difference between the three groups was statistically significant according to the Kruskal-Wallis test (H=20.233, p<0.001), as was the difference between the clinical groups of schizotypal disorder and schizophrenia according to the Mann-Whitney test (U=226, p=0.03781).",
+    "question_type": "other",
+    "keywords": [
+      "schizophrenia",
+      "schizotypal disorder",
+      "reference choice",
+      "statistical analysis",
+      "PANSS"
+    ]
+  },
+  {
+    "question": "How do variations in Major Depressive Disorder symptoms influence medication selection between SSRIs and SNRIs according to the study?",
+    "gold_pmids": [
+      "41781940"
+    ],
+    "reference_answer": "The study investigates how variations in Major Depressive Disorder (MDD) symptoms are associated with randomized clinical trial arm assignment between SSRIs and SNRIs. Counterfactual reasoning highlights which MDD symptoms the model uses to distinguish SSRI vs. SNRI trial assignments.",
+    "question_type": "treatment",
+    "keywords": [
+      "Major Depressive Disorder",
+      "SSRIs",
+      "SNRIs",
+      "counterfactual reasoning",
+      "medication selection"
+    ]
+  },
+  {
+    "question": "What is the association between schizophrenia and cancer according to the Mendelian Randomization studies analyzed in the review?",
+    "gold_pmids": [
+      "41968701"
+    ],
+    "reference_answer": "The findings of this study highlighted a statistically significant association between cancer and SCZ using the IVW method (OR = 1.05; 95% CI: [1.004; 1.105]; P = 0.032). Conversely, using the other two MR methods (MR-Egger and MR-Weighted Median) yielded no significant association, also in SCZ.",
+    "question_type": "epidemiology",
+    "keywords": [
+      "schizophrenia",
+      "cancer",
+      "Mendelian Randomization",
+      "association",
+      "meta-analysis"
+    ]
+  },
+  {
+    "question": "What cellular mechanisms are involved in the neurotoxicity of L-BMAA as demonstrated in the study?",
+    "gold_pmids": [
+      "41985289"
+    ],
+    "reference_answer": "The study reveals that L-BMAA enhances oxidative stress, disrupts mitochondrial function, and triggers destructive mitophagy and apoptosis. Mechanistically, L-BMAA promotes mitophagy in SH-SY5Y cells by enhancing AMPK-TSC1/2-mTOR signaling while concurrently weakening the Akt-TSC1/2-mTOR axis.",
+    "question_type": "mechanism",
+    "keywords": [
+      "L-BMAA",
+      "neurotoxicity",
+      "mitophagy",
+      "oxidative stress",
+      "apoptosis"
+    ]
+  },
+  {
+    "question": "What are the potential dangers of using conversational AI in individuals with psychosis?",
+    "gold_pmids": [
+      "41920760"
+    ],
+    "reference_answer": "The sycophantic and excessively agreeable nature of large language models, combined with their use of human-like language and capacity to generate inaccurate information, might collude with and reinforce delusional beliefs of a user with psychosis.",
+    "question_type": "other",
+    "keywords": [
+      "conversational AI",
+      "psychosis",
+      "delusional beliefs",
+      "large language models",
+      "mental health"
+    ]
+  },
+  {
+    "question": "What was the impact of a culturally tailored intervention on medication adherence among Chinese and Vietnamese Americans with chronic hepatitis B after 12 months?",
+    "gold_pmids": [
+      "41988576"
+    ],
+    "reference_answer": "The intervention had a significant impact on improving medication adherence at the 12-month follow-up assessment (coefficient = 0.56, p = 0.04). The findings show that a community-based culturally appropriate intervention significantly improved adherence to medication among Chinese and Vietnamese Americans with CHB in a 12-month period.",
+    "question_type": "treatment",
+    "keywords": [
+      "chronic hepatitis B",
+      "medication adherence",
+      "culturally tailored intervention",
+      "Chinese Americans",
+      "Vietnamese Americans"
+    ]
+  },
+  {
+    "question": "How does resilience mediate the relationship between burnout and mental health among nurses during the COVID-19 pandemic?",
+    "gold_pmids": [
+      "41981743"
+    ],
+    "reference_answer": "Resilience statistically accounted for part of the association between burnout dimensions and mental health, with emotional exhaustion and depersonalisation linked to poorer mental health, while personal accomplishment was associated with better mental health. Resilience showed significant indirect effects in these relationships.",
+    "question_type": "mechanism",
+    "keywords": [
+      "resilience",
+      "burnout",
+      "mental health",
+      "nurses",
+      "COVID-19"
+    ]
+  },
+  {
+    "question": "What does the systematic review suggest about the average time-to-relapse for ECT compared to ketamine in treatment-resistant depression?",
+    "gold_pmids": [
+      "41988667"
+    ],
+    "reference_answer": "The systematic review indicates that there is evidence for sustained therapeutic potential of both ECT and ketamine, with ECT possibly being associated with longer remission. However, the review also notes a lack of studies that directly compare time-to-relapse after ECT and ketamine, preventing formal statistical analysis.",
+    "question_type": "treatment",
+    "keywords": [
+      "ECT",
+      "ketamine",
+      "treatment-resistant depression",
+      "time-to-relapse",
+      "remission"
+    ]
+  },
+  {
+    "question": "What were the clinical symptoms presented by the postmenopausal woman with retained vaginal foreign bodies?",
+    "gold_pmids": [
+      "41982792"
+    ],
+    "reference_answer": "The 53-year-old postmenopausal woman presented with persistent vaginal bleeding, discharge, and foul odor for one year.",
+    "question_type": "diagnosis",
+    "keywords": [
+      "vaginal foreign bodies",
+      "postmenopausal woman",
+      "persistent vaginal bleeding",
+      "discharge",
+      "foul odor"
+    ]
+  },
+  {
+    "question": "What is the primary outcome measure for evaluating the efficacy of sequential accelerated theta-burst stimulation in adults with major depressive disorder and suicidal ideation?",
+    "gold_pmids": [
+      "41987818"
+    ],
+    "reference_answer": "The primary outcomes will be response and remission rates based on the 17-item Hamilton Depression Rating Scale (HAMD-17).",
+    "question_type": "treatment",
+    "keywords": [
+      "major depressive disorder",
+      "sequential accelerated theta-burst stimulation",
+      "suicidal ideation",
+      "Hamilton Depression Rating Scale",
+      "randomized controlled trial"
+    ]
+  },
+  {
+    "question": "How does smartphone overdependence affect the mental health of Korean adolescents?",
+    "gold_pmids": [
+      "41987315"
+    ],
+    "reference_answer": "Smartphone overdependence exerts an indirect effect on mental health through the mediating role of self-concept, while self-concept has a direct effect on mental health. The structural equation model accounted for 87.0% of the variance in mental health.",
+    "question_type": "mechanism",
+    "keywords": [
+      "smartphone overdependence",
+      "self-concept",
+      "mental health",
+      "Korean adolescents",
+      "structural equation modeling"
+    ]
+  },
+  {
+    "question": "What strategies are recommended for the transition of care for adolescents with ADHD?",
+    "gold_pmids": [
+      "41956837"
+    ],
+    "reference_answer": "The paper recommends placing the young person at the center of care, actively engaging them in decision-making, and integrating family and support networks. It also advises psychoeducation, cognitive-behavioral therapy, emotional regulation strategies, and functional adaptations such as school accommodations.",
+    "question_type": "treatment",
+    "keywords": [
+      "ADHD",
+      "transition of care",
+      "psychoeducation",
+      "cognitive-behavioral therapy",
+      "support networks"
+    ]
+  },
+  {
+    "question": "How does short-term PM2.5 exposure affect cognitive function in middle-aged and older adults?",
+    "gold_pmids": [
+      "41979129"
+    ],
+    "reference_answer": "A 5 μg/m3 increase in the 28-day average PM2.5 exposure was significantly associated with a 0.474-point reduction in Mini-Mental State Examination (MMSE) scores. Subgroup analyses showed stronger associations in women and middle-aged individuals, while the association was attenuated and nonsignificant in men.",
+    "question_type": "mechanism",
+    "keywords": [
+      "PM2.5",
+      "cognitive function",
+      "DNA methylation",
+      "circadian rhythm",
+      "MMSE"
+    ]
+  },
+  {
+    "question": "What non-pharmacological interventions have been shown to effectively reduce PTSD symptoms according to the systematic review?",
+    "gold_pmids": [
+      "41863279"
+    ],
+    "reference_answer": "The strongest, most reliable results for reducing PTSD symptoms were obtained by Mindfulness-Based Stress Reduction (MBSR) and Cognitive Behavioral Therapy (CBT), with some trials showing improvements of up to 45%. Other interventions such as Eye Movement Desensitization and Reprocessing (EMDR), acupuncture, yoga, and laughter therapy also demonstrated positive impacts, although the outcomes varied significantly.",
+    "question_type": "treatment",
+    "keywords": [
+      "PTSD",
+      "non-pharmacological interventions",
+      "MBSR",
+      "CBT",
+      "EMDR"
+    ]
+  },
+  {
+    "question": "How does capsulotomy affect executive prefrontal function in patients with obsessive-compulsive disorder?",
+    "gold_pmids": [
+      "41989106"
+    ],
+    "reference_answer": "Capsulotomy specifically remediates error-monitoring and behavioral flexibility through mesial prefrontal remodeling, while leaving working memory and conflict processing deficits intact. This suggests that cognitive flexibility may represent a state-dependent process amenable to intervention, whereas working memory and conflict processing impairments may reflect trait markers of OCD vulnerability.",
+    "question_type": "treatment",
+    "keywords": [
+      "capsulotomy",
+      "obsessive-compulsive disorder",
+      "executive function",
+      "prefrontal function",
+      "behavioral flexibility"
+    ]
+  },
+  {
+    "question": "What are the main types of AI applications identified in the scoping review for mental health service delivery?",
+    "gold_pmids": [
+      "41975946"
+    ],
+    "reference_answer": "The findings indicate that AI-driven decision support systems were the most prevalent (50%, n = 13), followed by predictive machine learning models (27%) and generative AI applications (15%).",
+    "question_type": "treatment",
+    "keywords": [
+      "artificial intelligence",
+      "mental health",
+      "decision support systems",
+      "machine learning",
+      "implementation"
+    ]
+  },
+  {
+    "question": "What are the associated factors for bullying perpetration among adolescents in Himachal Pradesh, India?",
+    "gold_pmids": [
+      "41926510"
+    ],
+    "reference_answer": "Increased risk of bullying perpetration was associated with behavioral factors such as junk food consumption, skipping breakfast, substance use, sexual activity, excessive screen time, and involvement in physical fights. Emotional factors included feelings of hopelessness and nervousness, while family-related factors indicated that adolescents with unskilled parents had higher odds of bullying others, whereas strong parental connectedness showed a significant positive association.",
+    "question_type": "epidemiology",
+    "keywords": [
+      "bullying",
+      "adolescents",
+      "Himachal Pradesh",
+      "risk factors",
+      "parental connectedness"
+    ]
+  },
+  {
+    "question": "How does the incidence of oxygen-desaturation compare between elderly patients receiving esketamine adjunct to propofol sedation and those receiving sufentanil adjunct to propofol sedation during urologic surgeries?",
+    "gold_pmids": [
+      "41087943"
+    ],
+    "reference_answer": "The incidence of oxygen-desaturation was 34.0% in the esketamine/propofol group compared to 68.1% in the sufentanil/propofol group, with a significant difference (P < 0.001). Esketamine combined with propofol sedation could reduce the incidence of oxygen-desaturation in elderly patients undergoing urologic surgeries.",
+    "question_type": "treatment",
+    "keywords": [
+      "esketamine",
+      "sufentanil",
+      "propofol",
+      "oxygen-desaturation",
+      "elderly patients"
+    ]
+  },
+  {
+    "question": "What is the design and objective of the study evaluating intermittent theta burst stimulation in adolescents with depression?",
+    "gold_pmids": [
+      "41975503"
+    ],
+    "reference_answer": "This study is a single-center, randomized, double-blind, and sham-stimulation-controlled clinical trial aimed at exploring the clinical efficacy of intermittent theta burst stimulation (iTBS) in adolescents with depression during the acute phase. It plans to recruit approximately 76 adolescent patients aged 14-18 years.",
+    "question_type": "treatment",
+    "keywords": [
+      "intermittent theta burst stimulation",
+      "adolescent depression",
+      "randomized controlled trial",
+      "clinical efficacy",
+      "sham control"
+    ]
+  },
+  {
+    "question": "What are the primary components of the Hwa-free application used in the treatment of Hwa-byung?",
+    "gold_pmids": [
+      "41953559"
+    ],
+    "reference_answer": "The Hwa-free application integrates four primary components: ACT-based educational videos, daily three-line journaling, diaphragmatic breathing training, and guided meditation audio content.",
+    "question_type": "treatment",
+    "keywords": [
+      "Hwa-byung",
+      "smartphone application",
+      "ACT-based",
+      "treatment",
+      "clinical utility"
+    ]
+  },
+  {
+    "question": "Does SSRI treatment in adolescence influence the risk of developing psychosis later in life?",
+    "gold_pmids": [
+      "41944683"
+    ],
+    "reference_answer": "This quasi-experimental study found no evidence of a causal relationship between SSRI treatment in adolescence and later psychosis risk. Our findings do not support the hypothesis that SSRI treatment of CMDs in adolescence prevents later psychosis.",
+    "question_type": "treatment",
+    "keywords": [
+      "SSRI",
+      "psychosis",
+      "adolescence",
+      "depression",
+      "CMDs"
+    ]
+  },
+  {
+    "question": "What are the advantages of intranasal drug delivery in treating depression compared to traditional delivery methods?",
+    "gold_pmids": [
+      "41987143"
+    ],
+    "reference_answer": "Intranasal administration offers a promising approach for treating central nervous system disorders, particularly depression, by bypassing the blood-brain barrier and significantly enhancing brain drug bioavailability. It also provides rapid onset and high response rates, as evidenced by clinical trials evaluating formulations like esketamine in treatment-resistant depression.",
+    "question_type": "treatment",
+    "keywords": [
+      "intranasal administration",
+      "depression",
+      "blood-brain barrier",
+      "esketamine",
+      "neuroinflammation"
+    ]
+  },
+  {
+    "question": "What are the identified topics related to psychotherapy utilization in suicide-risk-stratified veterans with PTSD?",
+    "gold_pmids": [
+      "41983743"
+    ],
+    "reference_answer": "We identified 5 topics: Risk, Treatment Planning, Evaluation, Psychosocial, and Medication. Cases and controls had several significantly different topic patterns, aiding understanding of psychotherapy utilization and risk monitoring.",
+    "question_type": "treatment",
+    "keywords": [
+      "PTSD",
+      "psychotherapy",
+      "veterans",
+      "suicide risk",
+      "natural language processing"
+    ]
+  },
+  {
+    "question": "What are the emerging treatment strategies for adult amblyopia that demonstrate more substantial gains compared to conventional methods?",
+    "gold_pmids": [
+      "41971201"
+    ],
+    "reference_answer": "Emerging therapeutic strategies such as dichoptic training, virtual reality-based interventions, neuromodulation techniques, and selected pharmacological agents demonstrated more substantial and sustained gains in both acuity and binocular function compared to conventional treatments.",
+    "question_type": "treatment",
+    "keywords": [
+      "amblyopia",
+      "adult neuroplasticity",
+      "dichoptic training",
+      "virtual reality",
+      "treatment strategies"
+    ]
+  },
+  {
+    "question": "What are some therapeutic interventions targeting the microbiome that may help alleviate neuropsychiatric symptoms?",
+    "gold_pmids": [
+      "41852385"
+    ],
+    "reference_answer": "Therapeutic potential of microbiome-targeted interventions includes probiotics, fecal microbiota transplantation (FMT), and precision dietary modulation in ameliorating neuropsychiatric symptoms.",
+    "question_type": "treatment",
+    "keywords": [
+      "gut microbiome",
+      "neuropsychiatric symptoms",
+      "probiotics",
+      "fecal microbiota transplantation",
+      "dietary modulation"
+    ]
+  },
+  {
+    "question": "What benefits did veterinary staff perceive from participating in a dogs-at-work program?",
+    "gold_pmids": [
+      "41969875"
+    ],
+    "reference_answer": "Veterinary staff perceived benefits from interacting with dogs at work, including an increase in social interactions, improvements in mental health, opportunities for physical activity, and recommendations for program logistics.",
+    "question_type": "other",
+    "keywords": [
+      "dogs-at-work program",
+      "veterinary staff",
+      "wellbeing",
+      "resilience",
+      "mental health"
+    ]
+  },
+  {
+    "question": "What are the preexisting comorbidities associated with an increased risk of developing complex regional pain syndrome (CRPS) after a distal radius fracture (DRF)?",
+    "gold_pmids": [
+      "41931087"
+    ],
+    "reference_answer": "Preexisting neuropathic disorders, particularly traumatic nerve injuries, compressive neuropathies, and cervical radiculopathy, are the strongest predictors of CRPS after DRF. Psychiatric conditions confer a smaller but consistent risk, while substance-related factors vary.",
+    "question_type": "epidemiology",
+    "keywords": [
+      "complex regional pain syndrome",
+      "distal radius fracture",
+      "neuropathic disorders",
+      "psychiatric conditions",
+      "substance use"
+    ]
+  },
+  {
+    "question": "What is the objective of the scoping review on mental health care for Black university students?",
+    "gold_pmids": [
+      "41978436"
+    ],
+    "reference_answer": "The objective of this review is to map the delivery of mental health care to Black university students formally enrolled in undergraduate and postgraduate courses at public or private higher-education institutions.",
+    "question_type": "other",
+    "keywords": [
+      "mental health care",
+      "Black university students",
+      "scoping review",
+      "higher education",
+      "racial inequities"
+    ]
+  },
+  {
+    "question": "What clinical improvement was observed in the 17-year-old male after discontinuing agomelatine?",
+    "gold_pmids": [
+      "41821997"
+    ],
+    "reference_answer": "Following discontinuation of agomelatine and initiation of olanzapine, significant clinical improvement was observed within three weeks. Symptom reduction was confirmed with standardized rating scales.",
+    "question_type": "treatment",
+    "keywords": [
+      "agomelatine",
+      "adolescent",
+      "bipolar disorder",
+      "subjective double delusion",
+      "olanzapine"
+    ]
+  },
+  {
+    "question": "What is the title of the corrected article regarding brain gray matter abnormalities?",
+    "gold_pmids": [
+      "41982362"
+    ],
+    "reference_answer": "The title of the corrected article is 'Abnormalities of brain gray matter in bipolar depression and unipolar depression.'",
+    "question_type": "other",
+    "keywords": [
+      "brain gray matter",
+      "bipolar depression",
+      "unipolar depression",
+      "abnormalities",
+      "correction"
+    ]
+  },
+  {
+    "question": "What are the reported risks associated with the use of AI chatbots in mental health services?",
+    "gold_pmids": [
+      "41972440"
+    ],
+    "reference_answer": "Reported risks included: reinforcement of delusions in users prone to psychosis, reassurance loops in obsessive-compulsive disorder (OCD) and health-anxiety escalation, information overload, inconsistent responses and delayed care in depression, and inconsistent crisis detection for suicidality.",
+    "question_type": "other",
+    "keywords": [
+      "AI chatbots",
+      "mental health",
+      "risks",
+      "psychosis",
+      "OCD"
+    ]
+  },
+  {
+    "question": "What are the key mechanisms by which electroacupuncture alleviates pain-related affective disorders?",
+    "gold_pmids": [
+      "41983612"
+    ],
+    "reference_answer": "The key mechanisms include brain functional regulation, neurotransmitter and receptor modulation, and immune factor adjustment. Electroacupuncture modulates brain regions and networks, alters signaling of various neurotransmitters, and reduces neuroinflammation by targeting specific pathways and cytokines.",
+    "question_type": "mechanism",
+    "keywords": [
+      "electroacupuncture",
+      "pain-related affective disorders",
+      "neurotransmitter",
+      "neuroinflammation",
+      "mechanisms"
+    ]
+  },
+  {
+    "question": "What were the primary and secondary outcomes of the internet-delivered Parent-Child Interaction Therapy (I-PCIT) for preschool children with ADHD in the study?",
+    "gold_pmids": [
+      "41964765"
+    ],
+    "reference_answer": "The primary outcome was the severity of the child's disruptive behavior evaluated using the Eyberg Child Behavior Inventory at 16 weeks. Secondary outcomes included the child's externalizing behaviors, ADHD symptoms, and parental outcomes such as parenting stress, depression, parenting behavior, and confidence.",
+    "question_type": "treatment",
+    "keywords": [
+      "ADHD",
+      "Parent-Child Interaction Therapy",
+      "disruptive behavior",
+      "parenting stress",
+      "randomized controlled trial"
+    ]
+  },
+  {
+    "question": "What is the relationship between alexithymia and binge eating disorder in patients with obesity according to the study?",
+    "gold_pmids": [
+      "41962768"
+    ],
+    "reference_answer": "The study found that while alexithymia scores were higher in patients with binge eating disorder (BED) compared to those without, the multivariate analysis did not confirm a significant link between alexithymia and BED after adjusting for other psychological factors, particularly depressive symptoms.",
+    "question_type": "mechanism",
+    "keywords": [
+      "alexithymia",
+      "binge eating disorder",
+      "obesity",
+      "depression",
+      "psychological factors"
+    ]
+  },
+  {
+    "question": "What were the preliminary findings regarding the efficacy of VR-assisted meditation for veterans with disabilities compared to a control group?",
+    "gold_pmids": [
+      "41934439"
+    ],
+    "reference_answer": "The VR group showed higher post-intervention scores in psychological well-being and perceived system usability compared to controls. Although scores decreased slightly at follow-up, they remained above the control condition.",
+    "question_type": "treatment",
+    "keywords": [
+      "VR-assisted meditation",
+      "veterans",
+      "psychological well-being",
+      "disabilities",
+      "randomized controlled trial"
+    ]
+  },
+  {
+    "question": "What are the two main sources of uneven cognitive profiles discussed in the context of genetic effects on brain development?",
+    "gold_pmids": [
+      "41987674"
+    ],
+    "reference_answer": "The two main sources of uneven profiles appear possible: regional genetic effects on brain development that act on mechanisms which play an influential role in the development of a particular cognitive or socioemotional ability (domain-specificity), or genetic effects on brain development that have a more widespread influence on neurocomputational properties, but the development of particular abilities is differentially sensitive to variation in those properties (domain-relevance).",
+    "question_type": "mechanism",
+    "keywords": [
+      "genetic effects",
+      "cognitive profiles",
+      "brain development",
+      "domain-specificity",
+      "domain-relevance"
+    ]
+  },
+  {
+    "question": "How do depression and relationship distress affect the length of couple therapy treatment?",
+    "gold_pmids": [
+      "41928491"
+    ],
+    "reference_answer": "Having one partner meeting the relationship distress cut-off as well as both partners meeting depression cut-offs were associated with longer treatment. Additionally, therapists in the Western region of the United States and treatment after the COVID pandemic were associated with treatment length.",
+    "question_type": "treatment",
+    "keywords": [
+      "couple therapy",
+      "depression",
+      "relationship distress",
+      "treatment length",
+      "COVID pandemic"
+    ]
+  },
+  {
+    "question": "Does delivering digital cognitive behavioural therapy for insomnia (dCBT-I) within a crenotherapy context improve insomnia symptom severity compared to stand-alone dCBT-I?",
+    "gold_pmids": [
+      "41899100"
+    ],
+    "reference_answer": "The primary between-group comparison did not demonstrate a statistically significant additive effect of crenotherapy on insomnia severity, as ISI outcomes did not differ between the crenotherapy-delivered and stand-alone dCBT-I groups. However, post hoc exploratory subgroup analyses suggested that among participants younger than 60, delivery of dCBT-I within a crenotherapy care setting was associated with greater improvements in insomnia symptoms compared with stand-alone dCBT-I.",
+    "question_type": "treatment",
+    "keywords": [
+      "digital CBT-I",
+      "insomnia",
+      "crenotherapy",
+      "randomised controlled trial",
+      "symptom severity"
+    ]
+  },
+  {
+    "question": "What factors are associated with the effectiveness of social support interventions for preventing and treating post-trauma psychopathology in high-risk professionals?",
+    "gold_pmids": [
+      "41983251"
+    ],
+    "reference_answer": "Higher effectiveness was associated with more sessions, active and therapeutic interventions, higher effectiveness was associated with more sessions, active skill training and sustained engagement with support sources. Peer support was specifically associated with effectiveness in preventive interventions, while partner support emerged as particularly beneficial in treatment settings.",
+    "question_type": "treatment",
+    "keywords": [
+      "social support",
+      "post-trauma psychopathology",
+      "high-risk professionals",
+      "interventions",
+      "PTSD"
+    ]
+  },
+  {
+    "question": "What are the emotion processing deficits observed in individuals with high-risk problematic social media use (PMSMU)?",
+    "gold_pmids": [
+      "41984534"
+    ],
+    "reference_answer": "High-risk PMSMU showed enhanced accuracy for joy emotion but impaired negative emotion recognition. Additionally, they exhibited attentional biases toward positive cues and prefrontal-temporal hyperactivation during negative emotion decoding.",
+    "question_type": "mechanism",
+    "keywords": [
+      "problematic social media use",
+      "emotion processing deficits",
+      "attentional bias",
+      "neural dysfunction",
+      "psychosocial functioning"
+    ]
+  },
+  {
+    "question": "What are the main barriers faced by ethnic minorities when accessing mental health services in Europe?",
+    "gold_pmids": [
+      "41987983"
+    ],
+    "reference_answer": "The research found that people with different cultural backgrounds face specific barriers when seeking help from mental health services, particularly the criticism of being treated differently, unequally, or disparately compared to the majority population. Ethnic minorities also experience significant unmet healthcare needs, which may contribute to their socioeconomic difficulties.",
+    "question_type": "treatment",
+    "keywords": [
+      "mental health services",
+      "ethnic minorities",
+      "barriers",
+      "discrimination",
+      "unmet healthcare needs"
+    ]
+  },
+  {
+    "question": "What is the effect of low-dose esketamine combined with propofol on the incidence of hypoxemia during gastroscopy sedation in high-altitude residents?",
+    "gold_pmids": [
+      "40739541"
+    ],
+    "reference_answer": "Low-dose esketamine combined with propofol is associated with a significantly lower incidence of hypoxemia during gastroscopy sedation in patients residing at high altitude, with an incidence of 8.75% compared to 32.5% in the control group (p < 0.001).",
+    "question_type": "treatment",
+    "keywords": [
+      "esketamine",
+      "propofol",
+      "hypoxemia",
+      "gastroscopy",
+      "high altitude"
+    ]
+  },
+  {
+    "question": "What emotional and physiological factors are associated with compulsive skin picking in patients with anorexia nervosa?",
+    "gold_pmids": [
+      "41978120"
+    ],
+    "reference_answer": "Patients with anorexia nervosa described a consistent emotional and physiological sequence preceding skin picking: increased internal tension followed by short-term relief and subsequent self-directed negative emotions. Episodes occurred in contexts of emotional overload, understimulation, reduced emotional awareness, and, in some cases, hunger- or meal-related stress.",
+    "question_type": "mechanism",
+    "keywords": [
+      "compulsive skin picking",
+      "anorexia nervosa",
+      "emotional dysregulation",
+      "interoceptive processing",
+      "body-focused repetitive behaviors"
+    ]
+  },
+  {
+    "question": "What are the primary health-related outcomes improved by physical activity in children and adolescents with cancer according to the systematic review?",
+    "gold_pmids": [
+      "41988125"
+    ],
+    "reference_answer": "Physical activity significantly improved fatigue, muscle strength, trunk muscle strength, physical activity behavior, physical activity levels, six-minute walk test, cognitive function, and executive function in children and adolescents with cancer. However, it had no significant effect on quality of life, upper and lower body muscle strength, balance, flexibility, athletic performance, peak oxygen uptake, and depressive symptoms.",
+    "question_type": "treatment",
+    "keywords": [
+      "physical activity",
+      "children",
+      "adolescents",
+      "cancer",
+      "health-related outcomes"
+    ]
+  },
+  {
+    "question": "How did public engagement with posts about ADHD and ASD change over time from 2009 to 2023?",
+    "gold_pmids": [
+      "41955613"
+    ],
+    "reference_answer": "Engagement analysis indicated a notable increase in likes and reposts per post over time, particularly after 2019, with ADHD-related posts in English experiencing peak engagement during the COVID-19 pandemic. However, ASD posts had comparatively lower engagement across languages.",
+    "question_type": "other",
+    "keywords": [
+      "ADHD",
+      "ASD",
+      "public engagement",
+      "social media",
+      "COVID-19"
+    ]
+  },
+  {
+    "question": "What is the proposed role of Posner molecules in the pharmacological effects of psychedelics?",
+    "gold_pmids": [
+      "41988526"
+    ],
+    "reference_answer": "The central hypothesis is that intense 5-HT2A-driven neural activity and Ca2+ flux during psychedelic exposure foster conditions under which 31P nuclear spins in phosphate groups may become entangled and shielded from decoherence within Posner molecules, subsequently influencing neuronal signaling when these clusters dissolve and release bursts of Ca2+ in different neuronal compartments.",
+    "question_type": "mechanism",
+    "keywords": [
+      "psychedelics",
+      "Posner molecules",
+      "5-HT2A receptor",
+      "quantum coherence",
+      "neuropharmacology"
+    ]
+  },
+  {
+    "question": "What assessments are included in the Vivistim GRASP registry for chronic stroke survivors receiving paired vagus nerve stimulation?",
+    "gold_pmids": [
+      "41988415"
+    ],
+    "reference_answer": "Motor outcome assessments include the Fugl-Meyer Assessment-Upper Extremity, the Nine Hole Peg Test, and the Wolf Motor Function Test (optional). Patient-reported outcome assessments include a global quality of life questionnaire, Stroke Impact Scale, Motor Activity Log, and Beck Depression Inventory.",
+    "question_type": "treatment",
+    "keywords": [
+      "chronic stroke",
+      "vagus nerve stimulation",
+      "outcome assessments",
+      "Fugl-Meyer Assessment",
+      "Stroke Impact Scale"
+    ]
+  },
+  {
+    "question": "What were the outcomes of the randomized pilot trial for the My SCI Toolkit program in terms of feasibility and acceptability?",
+    "gold_pmids": [
+      "41989405"
+    ],
+    "reference_answer": "The My SCI Toolkit program was found to be feasible, with a participant retention rate of 95% in both unguided and coached groups, and acceptable, with mean Client Satisfaction Questionnaire-8 scores of 23.94 for unguided and 26.42 for coached arms.",
+    "question_type": "treatment",
+    "keywords": [
+      "chronic pain",
+      "spinal cord injury",
+      "acceptance and commitment therapy",
+      "feasibility",
+      "acceptability"
+    ]
+  },
+  {
+    "question": "What was the primary outcome measured in the trial of ketamine under propofol sedation for chronic pain and depression?",
+    "gold_pmids": [
+      "41988848"
+    ],
+    "reference_answer": "The primary outcome is change in mean daily pain intensity (0-10 Numeric Rating Scale), assuming a detectable difference of 1.5 points.",
+    "question_type": "treatment",
+    "keywords": [
+      "ketamine",
+      "propofol",
+      "chronic pain",
+      "depression",
+      "randomized trial"
+    ]
+  },
+  {
+    "question": "How does BOLD signal variability differ between individuals with autism, schizophrenia, and typically developing controls?",
+    "gold_pmids": [
+      "41987679"
+    ],
+    "reference_answer": "Both autism and schizophrenia exhibited lower BOLD signal variability than typically developing controls across rest and task, with reduced variability observed in somatomotor, visual, and auditory networks. Resting-state variability showed stronger group-based differences and cognitive associations than task-based variability.",
+    "question_type": "mechanism",
+    "keywords": [
+      "BOLD signal variability",
+      "autism",
+      "schizophrenia",
+      "cognitive outcomes",
+      "neural flexibility"
+    ]
+  },
+  {
+    "question": "What are the most cited barriers to seeking mental health support among European university students?",
+    "gold_pmids": [
+      "41971223"
+    ],
+    "reference_answer": "The most cited barrier to seeking support was the expense related to professional therapy and long waiting times for an appointment with professional therapists.",
+    "question_type": "other",
+    "keywords": [
+      "mental health",
+      "support-seeking",
+      "barriers",
+      "European university students",
+      "anxiety"
+    ]
+  },
+  {
+    "question": "What were the co-primary outcomes assessed in the network meta-analysis of pharmacological interventions for the maintenance of bipolar disorder?",
+    "gold_pmids": [
+      "41985753"
+    ],
+    "reference_answer": "The co-primary outcomes were the relapse rate into an acute episode of any mood polarity and tolerability, defined as discontinuation due to side effects.",
+    "question_type": "treatment",
+    "keywords": [
+      "bipolar disorder",
+      "pharmacological interventions",
+      "network meta-analysis",
+      "relapse rate",
+      "tolerability"
+    ]
+  },
+  {
+    "question": "What method was developed for the simultaneous quantification of tryptophan and its metabolites in human serum?",
+    "gold_pmids": [
+      "41985254"
+    ],
+    "reference_answer": "A sensitive, rapid, and robust liquid chromatography-tandem mass spectrometry (LC-MS/MS) method was developed for the simultaneous quantification of tryptophan (TRP) and its metabolites, kynurenine (KYN) and kynurenic acid (KYNA), in human serum using simple protein precipitation.",
+    "question_type": "other",
+    "keywords": [
+      "tryptophan",
+      "kynurenine",
+      "kynurenic acid",
+      "LC-MS/MS",
+      "serum"
+    ]
+  },
+  {
+    "question": "What were the main findings regarding the safety and treatment satisfaction of PrEP users in the study?",
+    "gold_pmids": [
+      "41973627"
+    ],
+    "reference_answer": "PrEP was well tolerated, with no moderate or severe adverse events; mild transient symptoms were mainly gastrointestinal (31/45, 68.9%) and neurological (26/45, 57.8%). Treatment satisfaction was consistently high, with scores around 85-87 on the Treatment Satisfaction Questionnaire for Medication.",
+    "question_type": "treatment",
+    "keywords": [
+      "PrEP",
+      "treatment satisfaction",
+      "adverse events",
+      "digital health tools",
+      "HRQoL"
+    ]
+  },
+  {
+    "question": "What are the challenges identified in integrating family planning and nutrition services in Tanzania?",
+    "gold_pmids": [
+      "41974464"
+    ],
+    "reference_answer": "Challenges to service integration include fragmentation between family planning and nutrition services, frequent stockouts, long wait times, stigma, and limited male engagement.",
+    "question_type": "other",
+    "keywords": [
+      "family planning",
+      "nutrition services",
+      "Tanzania",
+      "integration",
+      "challenges"
+    ]
+  },
+  {
+    "question": "What role do digital applications play in the treatment of adolescent patients with borderline personality disorder?",
+    "gold_pmids": [
+      "41973245"
+    ],
+    "reference_answer": "Digital applications are promising components of blended care and transition-focused programs for adolescent patients with borderline personality disorder. They can improve the continuity of care and crisis management when embedded in structured services, although adherence to these digital interventions is variable.",
+    "question_type": "treatment",
+    "keywords": [
+      "borderline personality disorder",
+      "adolescents",
+      "digital applications",
+      "treatment",
+      "continuity of care"
+    ]
+  },
+  {
+    "question": "What factors influence engagement in exercise programs for individuals with resistant major depression?",
+    "gold_pmids": [
+      "41975834"
+    ],
+    "reference_answer": "Engagement in exercise interventions for resistant major depression is influenced by intrapersonal factors (such as symptoms and medication), interpersonal factors (including family and healthcare professionals), and environmental factors (like program location and session design). Motivation is shaped by emotional, physical, and social goals, while barriers include fatigue, anhedonia, and side effects of medication.",
+    "question_type": "treatment",
+    "keywords": [
+      "resistant major depression",
+      "exercise program",
+      "engagement",
+      "motivation",
+      "barriers"
+    ]
+  },
+  {
+    "question": "What demographic and clinical factors are associated with lifetime suicide attempts in patients with bipolar disorder according to the study?",
+    "gold_pmids": [
+      "41967687"
+    ],
+    "reference_answer": "The study found that lifetime suicide attempts in bipolar disorder patients were associated with younger age, female gender, inpatient status, depressive and mixed phases of BD, presence of rapid cycling in the past year, and depression at illness onset.",
+    "question_type": "epidemiology",
+    "keywords": [
+      "bipolar disorder",
+      "suicide attempts",
+      "demographic factors",
+      "clinical correlates",
+      "Asia"
+    ]
+  },
+  {
+    "question": "What mental health issues were reported by female pulmonologists compared to their male counterparts in the study?",
+    "gold_pmids": [
+      "41982871"
+    ],
+    "reference_answer": "Women reported significantly higher rates of anxiety (58.8% versus 44.2%), burnout (27.9% versus 15.4%) and anxiolytic use (23.0% versus 14.5%) than men.",
+    "question_type": "epidemiology",
+    "keywords": [
+      "mental health",
+      "pulmonologists",
+      "gender disparities",
+      "anxiety",
+      "burnout"
+    ]
+  },
+  {
+    "question": "How does major depression polygenic risk score (MD PRS) influence the risk of self-harm in individuals of European ancestry?",
+    "gold_pmids": [
+      "41969057"
+    ],
+    "reference_answer": "Higher MD PRS was associated with an increased risk of self-harm. Significant heterogeneity was observed: the association was stronger among individuals exposed to physical violence or partner belittlement, but weaker among older adults and those with higher income.",
+    "question_type": "mechanism",
+    "keywords": [
+      "self-harm",
+      "major depression",
+      "polygenic risk scores",
+      "environmental factors",
+      "UK Biobank"
+    ]
+  },
+  {
+    "question": "What early psychiatric symptoms may indicate sporadic Creutzfeldt-Jakob disease in elderly patients?",
+    "gold_pmids": [
+      "41982597"
+    ],
+    "reference_answer": "Isolated late-onset depression may represent an early manifestation of sporadic Creutzfeldt-Jakob disease (sCJD) in elderly patients. In cases presenting with rapidly progressive psychiatric symptoms and poor treatment response, prion disease should be considered.",
+    "question_type": "diagnosis",
+    "keywords": [
+      "sCJD",
+      "late-onset depression",
+      "psychiatric symptoms",
+      "diagnostic delay",
+      "elderly patients"
+    ]
+  },
+  {
+    "question": "How does Kinsenoside (KIN) affect IDH1 activity and its implications for Alzheimer's disease therapy?",
+    "gold_pmids": [
+      "41980178"
+    ],
+    "reference_answer": "Kinsenoside (KIN) is identified as a selective competitive inhibitor of IDH1 that inhibits its activity, restores intracellular citrate distribution, reactivates mitochondrial TCA cycle flux, and reestablishes metabolic homeostasis. This intervention attenuates neuroinflammation, reduces β-amyloid (Aβ) deposition, and significantly improves cognitive performance in 5×FAD mice.",
+    "question_type": "treatment",
+    "keywords": [
+      "Kinsenoside",
+      "IDH1",
+      "Alzheimer's disease",
+      "TCA cycle",
+      "neuroinflammation"
+    ]
+  },
+  {
+    "question": "What are the leading comorbidities identified in stable COPD patients attending a chest clinic in Nigeria?",
+    "gold_pmids": [
+      "41801087"
+    ],
+    "reference_answer": "The leading comorbidities in stable COPD patients were anaemia (86.7%), impaired sleep quality (76%), and systemic hypertension (56%). Most patients had multiple comorbidities, with a mean comorbidity count of 4.2 in males and 3.8 in females.",
+    "question_type": "epidemiology",
+    "keywords": [
+      "COPD",
+      "comorbidities",
+      "anaemia",
+      "systemic hypertension",
+      "biomass smoke"
+    ]
+  },
+  {
+    "question": "What are the effects of meditation-based interventions on psychological well-being in people with epilepsy?",
+    "gold_pmids": [
+      "41806957"
+    ],
+    "reference_answer": "Most studies reported significant improvements in depression, anxiety, concentration and quality of life following meditation interventions. Meditation appears to be a promising adjunctive therapy for improving psychological well-being and potentially modulating cortical excitability in epilepsy.",
+    "question_type": "treatment",
+    "keywords": [
+      "meditation",
+      "epilepsy",
+      "psychological well-being",
+      "depression",
+      "anxiety"
+    ]
+  },
+  {
+    "question": "What were the findings regarding the relationship between inflammation and alcohol use disorder (AUD) in the studied community sample?",
+    "gold_pmids": [
+      "41969823"
+    ],
+    "reference_answer": "The study found that alcohol use disorder (AUD) was associated with lower levels of four individual cytokines (IL-1β, IL-4, IL-10, and IL-12), but in co-twin control analyses, these negative associations were nonsignificant, suggesting familial confounders explain these associations.",
+    "question_type": "mechanism",
+    "keywords": [
+      "inflammation",
+      "alcohol use disorder",
+      "cytokines",
+      "community sample",
+      "familial confounders"
+    ]
+  },
+  {
+    "question": "What are the preferred wellness interventions identified by resident physicians in the study?",
+    "gold_pmids": [
+      "41959998"
+    ],
+    "reference_answer": "Preferred wellness interventions included food, personal resources, and opportunities for social connections. Respondents had mixed views on giveaways.",
+    "question_type": "other",
+    "keywords": [
+      "resident physicians",
+      "wellness interventions",
+      "burnout",
+      "mental health",
+      "qualitative study"
+    ]
+  },
+  {
+    "question": "What are the most frequently cited health conditions for which cannabis is used among Australian adults?",
+    "gold_pmids": [
+      "41980571"
+    ],
+    "reference_answer": "The most frequently cited indications for cannabis use were anxiety (64%), pain (53%), and depression (52%).",
+    "question_type": "treatment",
+    "keywords": [
+      "cannabis use",
+      "anxiety",
+      "pain",
+      "depression",
+      "Australia"
+    ]
+  },
+  {
+    "question": "What is the primary outcome measure for the brief online mindfulness-based cognitive therapy (eMBCT) in patients undergoing digital replantation?",
+    "gold_pmids": [
+      "41975444"
+    ],
+    "reference_answer": "The primary outcome measure is PTSD symptom severity, assessed using the Stanford Acute Stress Reaction Questionnaire (SASRQ).",
+    "question_type": "treatment",
+    "keywords": [
+      "mindfulness-based cognitive therapy",
+      "digital replantation",
+      "PTSD",
+      "Stanford Acute Stress Reaction Questionnaire",
+      "psychological resilience"
+    ]
+  },
+  {
+    "question": "What are the associations of SGLT2 inhibitors with suicidality, all-cause mortality, and hospitalization in adults with bipolar disorder?",
+    "gold_pmids": [
+      "41921881"
+    ],
+    "reference_answer": "In this large cohort of over 1.23 million adults with bipolar disorder, SGLT2i therapy was associated with substantially lower risks of suicidality, hospitalization, and all-cause mortality, with consistent benefits across demographic and clinical subgroups.",
+    "question_type": "treatment",
+    "keywords": [
+      "SGLT2 inhibitors",
+      "bipolar disorder",
+      "suicidality",
+      "all-cause mortality",
+      "hospitalization"
+    ]
+  },
+  {
+    "question": "What types of studies will be included in the systematic review and meta-analysis of interventions to reduce burnout in general practitioners?",
+    "gold_pmids": [
+      "41988572"
+    ],
+    "reference_answer": "Randomized controlled trials, cluster-randomized trials, and non-randomized controlled studies evaluating individual-, group-, organisational-, or system-level interventions will be eligible.",
+    "question_type": "treatment",
+    "keywords": [
+      "burnout",
+      "general practitioners",
+      "systematic review",
+      "interventions",
+      "meta-analysis"
+    ]
+  },
+  {
+    "question": "What are the common interventions reported for pediatric patients with long-COVID in the study?",
+    "gold_pmids": [
+      "41978821"
+    ],
+    "reference_answer": "Common interventions included diet changes (81.8%), pacing (65.9%), sleep hygiene (61.2%), and other self-care techniques (46.7%).",
+    "question_type": "treatment",
+    "keywords": [
+      "pediatric long-COVID",
+      "interventions",
+      "diet changes",
+      "sleep hygiene",
+      "self-care techniques"
+    ]
+  },
+  {
+    "question": "What are the biological markers associated with transgenerational trauma as discussed in the systematic review?",
+    "gold_pmids": [
+      "41972699"
+    ],
+    "reference_answer": "The main study results include identification of sex-specific DNA methylation patterns in the NR3C1 gene and accelerated biological aging (GrimAge) in offspring, as well as evidence of neuroendocrine dysregulation indicated by low cortisol levels.",
+    "question_type": "mechanism",
+    "keywords": [
+      "transgenerational trauma",
+      "DNA methylation",
+      "cortisol",
+      "biological aging",
+      "psychological outcomes"
+    ]
+  },
+  {
+    "question": "How does the use of esketamine compare to sufentanil in terms of hypotension and hypoxia during painless gastrointestinal endoscopy?",
+    "gold_pmids": [
+      "41121399"
+    ],
+    "reference_answer": "Compared with the Suf group, the Esk group reduced the incidence of hypotension (12.8% vs 36.2%, P < 0.001), respiratory depression (2.1% vs 15.4%, P < 0.001), and hypoxia (7.1% vs 16.1%, P = 0.018). Esketamine, midazolam, and propofol can achieve opioid-free sedation and reduce the occurrence of hypotension and hypoxia.",
+    "question_type": "treatment",
+    "keywords": [
+      "esketamine",
+      "sufentanil",
+      "hypotension",
+      "hypoxia",
+      "gastrointestinal endoscopy"
+    ]
+  },
+  {
+    "question": "What structural connectivity alterations are associated with illness severity and medication use in individuals with bipolar disorder?",
+    "gold_pmids": [
+      "41959518"
+    ],
+    "reference_answer": "BD showed widespread network alterations (lower density and efficiency, longer path length, and higher betweenness centrality), altered microstructural organization in a limbic-basal ganglia circuit, and abnormal streamline counts in a default-mode/salience/fronto-limbic-basal ganglia network. Antidepressant (particularly SSRI), anticonvulsant, and antipsychotic use related to poorer global and fronto-limbic connectivity.",
+    "question_type": "mechanism",
+    "keywords": [
+      "bipolar disorder",
+      "structural connectivity",
+      "medication use",
+      "MRI",
+      "network alterations"
+    ]
+  },
+  {
+    "question": "What are the primary and secondary outcomes evaluated in the Familia Bora parenting program trial?",
+    "gold_pmids": [
+      "41987139"
+    ],
+    "reference_answer": "The primary outcome is maternal and paternal engagement in stimulation activities with their young child. Secondary outcomes include various measures of caregiving as reported by mothers and fathers, including parenting attitudes, discipline practices, couples' relationship quality, parenting stress, gender attitudes, and early childhood development (ECD).",
+    "question_type": "treatment",
+    "keywords": [
+      "parenting program",
+      "couples",
+      "early childhood development",
+      "engagement",
+      "gender-transformative"
+    ]
+  },
+  {
+    "question": "How does AVATAR therapy compare to cognitive behavioral therapy in terms of efficacy for medication-resistant auditory hallucinations?",
+    "gold_pmids": [
+      "41969063"
+    ],
+    "reference_answer": "Compared with CBT, AVATAR therapy showed no significantly greater reduction in AH severity. However, it demonstrated superior sustained improvement three months post-treatment and greater reduction in overall psychotic symptoms.",
+    "question_type": "treatment",
+    "keywords": [
+      "AVATAR therapy",
+      "cognitive behavioral therapy",
+      "auditory hallucinations",
+      "meta-analysis",
+      "psychotic symptoms"
+    ]
+  },
+  {
+    "question": "What were the effects of adjunctive virtual reality-based mirror exposure therapy (VR-MET) on state anxiety and fear of gaining weight in adolescents with anorexia nervosa compared to treatment as usual (TAU)?",
+    "gold_pmids": [
+      "41980806"
+    ],
+    "reference_answer": "Both VR-based conditions showed greater reductions in state anxiety and fear of gaining weight compared with TAU alone. State body dissatisfaction decreased significantly only in the TAU+VR-MET group.",
+    "question_type": "treatment",
+    "keywords": [
+      "anorexia nervosa",
+      "virtual reality",
+      "mirror exposure therapy",
+      "state anxiety",
+      "fear of gaining weight"
+    ]
+  },
+  {
+    "question": "What is the association between somatic comorbidity and the severity of Somatic Symptom Disorder (SSD) in patients?",
+    "gold_pmids": [
+      "41978425"
+    ],
+    "reference_answer": "Somatic comorbidities were common in SSD but did not influence severity or psychosocial profile. Higher health anxiety was associated with greater SSD severity (β=0.287, P<.001).",
+    "question_type": "mechanism",
+    "keywords": [
+      "Somatic Symptom Disorder",
+      "somatic comorbidity",
+      "severity",
+      "health anxiety",
+      "psychosocial characteristics"
+    ]
+  },
+  {
+    "question": "What are the key outcomes generated from the mental health screening tools used in the study?",
+    "gold_pmids": [
+      "41924144"
+    ],
+    "reference_answer": "The key outcomes generated from the mental health screening tools include probable common mental disorders, depressive symptoms, and suicidal ideation. Approximately 12.9% of participants reported having experienced suicidal ideation, while 23.9% and 4.6% were screened positive using the Shona Symptoms Questionnaire and the Patient Health Questionnaire (PHQ-9), respectively.",
+    "question_type": "epidemiology",
+    "keywords": [
+      "mental health",
+      "adolescents",
+      "suicidal ideation",
+      "PHQ-9",
+      "SSQ-14"
+    ]
+  },
+  {
+    "question": "What is the aim of the Wellness4Students program at Makerere University?",
+    "gold_pmids": [
+      "41913560"
+    ],
+    "reference_answer": "The Wellness4Students program aims to assess the feasibility and effectiveness of a supportive SMS text messaging program in reducing the prevalence of stress, anxiety, and depression among university students in Uganda.",
+    "question_type": "treatment",
+    "keywords": [
+      "Wellness4Students",
+      "stress",
+      "anxiety",
+      "depression",
+      "university students"
+    ]
+  },
+  {
+    "question": "How does the long non-coding RNA MALAT1 influence LSD1 splicing in the context of stress resilience in mice?",
+    "gold_pmids": [
+      "41965120"
+    ],
+    "reference_answer": "The long non-coding RNA MALAT1 regulates the neurospecific splicing factor nSR100, which in turn controls LSD1 exon E8a inclusion. Reduced MALAT1 expression in susceptible mice coincided with marked overactivation of stress-responsive genes, linking this pathway to stress adaptation.",
+    "question_type": "mechanism",
+    "keywords": [
+      "MALAT1",
+      "LSD1",
+      "splicing",
+      "stress resilience",
+      "nSR100"
+    ]
+  },
+  {
+    "question": "What is the primary focus of the study protocol regarding PTSD and AUD comorbidity?",
+    "gold_pmids": [
+      "41837437"
+    ],
+    "reference_answer": "The study aims to examine the temporal ordering and stability of within-person symptom dynamics of PTSD and AUD using established comorbidity models, particularly in high-risk, socioeconomically disadvantaged Black individuals. It will utilize ecological momentary assessment over six months to explore how social drivers of health and genetic risk are associated with symptom maintenance and exacerbation.",
+    "question_type": "other",
+    "keywords": [
+      "PTSD",
+      "AUD",
+      "comorbidity",
+      "ecological momentary assessment",
+      "genetic risk"
+    ]
+  },
+  {
+    "question": "What are the effects of high-frequency rTMS combined with physical exercise on mood disorders in patients with methamphetamine use disorder?",
+    "gold_pmids": [
+      "41959948"
+    ],
+    "reference_answer": "The study found that both the rTMS combined with PE group and the PE group showed significant reductions in depression, anxiety, and MA craving after the 8-week intervention, with the rTMS + PE group demonstrating superior effects, including lower craving and higher dopamine levels at the 8th week, which persisted during the follow-up period.",
+    "question_type": "treatment",
+    "keywords": [
+      "high-frequency rTMS",
+      "physical exercise",
+      "mood disorders",
+      "methamphetamine use disorder",
+      "randomized clinical trial"
+    ]
+  },
+  {
+    "question": "What are some effective psychosocial intervention methods for survivors of road traffic crashes experiencing psychological consequences?",
+    "gold_pmids": [
+      "41985390"
+    ],
+    "reference_answer": "Among psychosocial intervention methods, trauma-focused cognitive-behavioral therapy, Eye Movement Desensitization and Reprocessing (EMDR), group therapy, virtual reality-based exposure techniques, and psychoeducation programs have been found to be effective.",
+    "question_type": "treatment",
+    "keywords": [
+      "psychological responses",
+      "traffic crashes",
+      "intervention methods",
+      "trauma",
+      "cognitive-behavioral therapy"
+    ]
+  },
+  {
+    "question": "How does Anshen Bunao Syrup exert its antidepressant effects in a CUMS rat model?",
+    "gold_pmids": [
+      "41962264"
+    ],
+    "reference_answer": "Anshen Bunao Syrup (ABS) exerts its antidepressant effects primarily through coordinated regulation of gut microbiota, metabolic homeostasis, and the Npas4-BDNF-PI3K/AKT signaling pathway. It also mitigates hippocampal neuronal damage, suppresses microglial overactivation, and reduces oxidative stress in the cortex.",
+    "question_type": "mechanism",
+    "keywords": [
+      "Anshen Bunao Syrup",
+      "CUMS",
+      "antidepressant",
+      "gut microbiota",
+      "Npas4-BDNF-PI3K/AKT"
+    ]
+  },
+  {
+    "question": "What are the effects of ketamine on the gut-brain axis in relation to neuroinflammation and depressive-like behaviors?",
+    "gold_pmids": [
+      "41974884"
+    ],
+    "reference_answer": "Along the gut-brain axis, ketamine is associated with restoration of microbial balance, normalization of short-chain fatty acid levels, and reduced migration of gut-derived γδ T17 and Th17 cells to the central nervous system, correlating with attenuated neuroinflammation and depressive-like behaviors.",
+    "question_type": "mechanism",
+    "keywords": [
+      "ketamine",
+      "gut-brain axis",
+      "neuroinflammation",
+      "depressive-like behaviors",
+      "microbial balance"
+    ]
+  },
+  {
+    "question": "What is the aim of the multi-center study described in the abstract?",
+    "gold_pmids": [
+      "41924059"
+    ],
+    "reference_answer": "The study aims to develop and validate an AI-based predictive model to identify Indian youth at risk of problematic use of digital technology and associated psychological outcomes such as stress, anxiety, depression, and addiction.",
+    "question_type": "prognosis",
+    "keywords": [
+      "AI",
+      "predictive model",
+      "digital technology",
+      "Indian youth",
+      "psychological outcomes"
+    ]
+  },
+  {
+    "question": "What were the feasibility outcomes of the multimodal exercise training program for frail people with multiple sclerosis?",
+    "gold_pmids": [
+      "41984883"
+    ],
+    "reference_answer": "The feasibility outcomes included a recruitment rate of 0.33 participants/week, a retention rate of 87.5%, and high adherence with participants completing 97.2% of planned training sessions. Participants also reported high levels of engagement and satisfaction with the trial, agreeing or strongly agreeing with 95.7% of applicable Study Participant Feedback Questionnaire items.",
+    "question_type": "treatment",
+    "keywords": [
+      "frailty",
+      "multiple sclerosis",
+      "exercise training",
+      "feasibility",
+      "adherence"
+    ]
+  },
+  {
+    "question": "How does the gut microbiome potentially influence the progression of amyotrophic lateral sclerosis (ALS)?",
+    "gold_pmids": [
+      "41925964"
+    ],
+    "reference_answer": "The gut microbiome may influence ALS biology by affecting systemic and central immune responses, energy metabolism, and the bioavailability of nutrients and therapeutic agents. Dysbiosis can contribute to intestinal barrier dysfunction and immune activation, while supplementation with beneficial metabolites like butyrate or nicotinamide has been shown to delay disease progression and extend survival.",
+    "question_type": "mechanism",
+    "keywords": [
+      "gut microbiome",
+      "amyotrophic lateral sclerosis",
+      "dysbiosis",
+      "butyrate",
+      "immune responses"
+    ]
+  },
+  {
+    "question": "What treatment strategies were used in the case report for a patient with dissociative identity disorder?",
+    "gold_pmids": [
+      "41849144"
+    ],
+    "reference_answer": "The treatment course included psychodynamic psychotherapy complemented by secondary strategies such as breathing and relaxation exercises.",
+    "question_type": "treatment",
+    "keywords": [
+      "dissociative identity disorder",
+      "psychodynamic psychotherapy",
+      "breathing exercises",
+      "relaxation exercises",
+      "borderline personality disorder"
+    ]
+  },
+  {
+    "question": "How does Petasites japonicus leaves affect depression-like behaviors in DSS-induced colitis mice?",
+    "gold_pmids": [
+      "41977455"
+    ],
+    "reference_answer": "Petasites japonicus leaves significantly alleviated depression-like behaviors in DSS-induced colitis mice by improving antioxidant systems, modulating serum stress-related hormones, normalizing hypothalamic-pituitary-adrenal axis dysregulation, and regulating the BDNF/TrkB signaling pathway.",
+    "question_type": "treatment",
+    "keywords": [
+      "Petasites japonicus",
+      "depression",
+      "DSS-induced colitis",
+      "BDNF/TrkB pathway",
+      "inflammation"
+    ]
+  },
+  {
+    "question": "What is the effect of sertraline on dialysis-induced hypotension during hemodialysis?",
+    "gold_pmids": [
+      "41827600"
+    ],
+    "reference_answer": "Sertraline significantly improves hemodynamic stability during hemodialysis, increasing mean arterial pressure and decreasing dialysis-induced hypotension episodes by 35%. It has a favorable safety profile with mild adverse events reported.",
+    "question_type": "treatment",
+    "keywords": [
+      "sertraline",
+      "dialysis-induced hypotension",
+      "hemodialysis",
+      "mean arterial pressure",
+      "adverse events"
+    ]
+  },
+  {
+    "question": "What are the main themes identified in the study regarding barriers and facilitators for individuals with lived experience of mental ill-health in healthcare systems?",
+    "gold_pmids": [
+      "41988574"
+    ],
+    "reference_answer": "The analyses revealed three themes: (1) 'Factors located within the health care system,' (2) 'Factors in regard to the personal situation,' and (3) 'Impact of diagnostic overshadowing on health.'",
+    "question_type": "other",
+    "keywords": [
+      "mental ill-health",
+      "diagnostic overshadowing",
+      "health care systems",
+      "stigma",
+      "barriers"
+    ]
+  },
+  {
+    "question": "What role do neuromodulators in the olfactory tubercle play in associative learning and reward processing?",
+    "gold_pmids": [
+      "41867091"
+    ],
+    "reference_answer": "The neuromodulators in the olfactory tubercle (OT) encode reward learning and extinction in a sexually dimorphic and state-dependent manner. They dynamically track cue discrimination and reversal learning, advancing our understanding of OT's roles in healthy cognition and neuropsychiatric disorders.",
+    "question_type": "mechanism",
+    "keywords": [
+      "neuromodulators",
+      "olfactory tubercle",
+      "reward processing",
+      "associative learning",
+      "dopamine"
+    ]
+  },
+  {
+    "question": "How does the addition of asundexian to antiplatelet therapy affect the risk of ischemic stroke in patients with noncardioembolic ischemic stroke or high-risk TIA?",
+    "gold_pmids": [
+      "41985132"
+    ],
+    "reference_answer": "The addition of asundexian (50 mg once daily) to antiplatelet therapy resulted in a lower incidence of ischemic stroke compared to placebo (6.2% vs. 8.4%; cause-specific hazard ratio, 0.74; 95% confidence interval [CI], 0.65 to 0.84; P<0.001).",
+    "question_type": "treatment",
+    "keywords": [
+      "asundexian",
+      "ischemic stroke",
+      "antiplatelet therapy",
+      "noncardioembolic",
+      "TIA"
+    ]
+  },
+  {
+    "question": "What are the proposed mechanisms through which psychedelics may target symptoms of both Major Depressive Disorder and chronic pain?",
+    "gold_pmids": [
+      "41940853"
+    ],
+    "reference_answer": "Proposed mechanisms include serotonergic modulation via the 5-HT2A receptor, anti-inflammatory effects, neuroplastic changes, altered brain network dynamics, psychological effects, and the influence of set and setting.",
+    "question_type": "mechanism",
+    "keywords": [
+      "Major Depressive Disorder",
+      "chronic pain",
+      "psychedelics",
+      "mechanisms",
+      "5-HT2A receptor"
+    ]
+  },
+  {
+    "question": "What are the strongest predictors of insomnia severity in Chinese urban adolescents according to the study?",
+    "gold_pmids": [
+      "41908865"
+    ],
+    "reference_answer": "Psychological pain was identified as the strongest predictor of adolescent insomnia (OR=1.444), followed by depression (OR=1.292) and parental absence for more than 3 months (OR=1.290).",
+    "question_type": "prognosis",
+    "keywords": [
+      "insomnia severity",
+      "adolescents",
+      "psychological pain",
+      "depression",
+      "predictive model"
+    ]
+  },
+  {
+    "question": "What strategies were proposed to address the information gaps regarding the diversity of the MS population in Canada?",
+    "gold_pmids": [
+      "41988491"
+    ],
+    "reference_answer": "Eight participants proposed 10 strategies; two were dropped before discussion and final ranking. The top options identified were a national standardized clinic form, novel applications of administrative data, and novel data linkages.",
+    "question_type": "other",
+    "keywords": [
+      "multiple sclerosis",
+      "diversity",
+      "Canada",
+      "strategies",
+      "health outcomes"
+    ]
+  },
+  {
+    "question": "What are the main themes identified in the perspectives of people with psychosis regarding algorithmic relapse prediction in digital remote monitoring systems?",
+    "gold_pmids": [
+      "41961978"
+    ],
+    "reference_answer": "Findings were described across 4 themes: accuracy, human-in-the-loop approach, trust, fears, and choice, and the benefits of using a relapse prediction algorithm. Participants emphasized the importance of transparency about algorithm sensitivity and specificity, the need for human oversight, and their concerns about the clinical team's responses to algorithm-generated predictions.",
+    "question_type": "other",
+    "keywords": [
+      "psychosis",
+      "algorithm-based relapse prediction",
+      "digital remote monitoring",
+      "human oversight",
+      "trust"
+    ]
+  },
+  {
+    "question": "What are the barriers that impede the prioritization of adolescent mental health (AMH) globally?",
+    "gold_pmids": [
+      "41981406"
+    ],
+    "reference_answer": "The barriers that impede the prioritization of AMH include prevailing interpersonal and institutional stigma, limited data on the burden of mental health problems, diverse ways of framing AMH leading to weak alignment, and a fragmented stakeholder landscape that inhibits coalition-building.",
+    "question_type": "other",
+    "keywords": [
+      "adolescent mental health",
+      "stigma",
+      "stakeholders",
+      "coalition-building",
+      "data limitations"
+    ]
+  },
+  {
+    "question": "What are the overarching themes identified in the experiences of food insecurity during pregnancy in high-income countries?",
+    "gold_pmids": [
+      "41975237"
+    ],
+    "reference_answer": "The findings identified three overarching themes: (1) barriers in access to food, (2) impact on physical and mental health, and (3) established individual, informal and statutory coping strategies.",
+    "question_type": "other",
+    "keywords": [
+      "food insecurity",
+      "pregnancy",
+      "high-income countries",
+      "qualitative research",
+      "health implications"
+    ]
+  },
+  {
+    "question": "What types of interventions were included in the dyadic psychosocial interventions for glioma patients and their partners?",
+    "gold_pmids": [
+      "41986804"
+    ],
+    "reference_answer": "Interventions included yoga, meditation, psychoeducational and CBT models, dignity therapy, EMDR, and communication coaching. Programs ranged from in-person to online, and from single sessions to multi-week.",
+    "question_type": "treatment",
+    "keywords": [
+      "dyadic interventions",
+      "glioma",
+      "psychosocial outcomes",
+      "yoga",
+      "CBT"
+    ]
+  },
+  {
+    "question": "What are the safety and preliminary efficacy findings of seltorexant compared to quetiapine extended release in patients with major depressive disorder?",
+    "gold_pmids": [
+      "41795948"
+    ],
+    "reference_answer": "Results support the favorable tolerability and preliminary efficacy of seltorexant 20 mg daily as adjunctive treatment in patients with MDD, especially those with insomnia symptoms. Treatment-emergent adverse event rates were 65.4% for seltorexant and 80.8% for quetiapine-XR.",
+    "question_type": "treatment",
+    "keywords": [
+      "seltorexant",
+      "quetiapine",
+      "major depressive disorder",
+      "safety",
+      "efficacy"
+    ]
+  },
+  {
+    "question": "What are the key recommendations for enhancing patient autonomy and access to mental health services in South Korea's Mental Health Welfare Act?",
+    "gold_pmids": [
+      "41987959"
+    ],
+    "reference_answer": "Key recommendations include developing informed consent protocols, expanding telemedicine and community-based care, and addressing digital health equity. This study highlights the importance of balancing individual rights with broader societal needs, especially during public health crises.",
+    "question_type": "treatment",
+    "keywords": [
+      "Mental Health Welfare Act",
+      "patient autonomy",
+      "telemedicine",
+      "community-based care",
+      "digital health equity"
+    ]
+  },
+  {
+    "question": "What was the administrative prevalence of multiple personality disorder (MPD) in Germany from 2012 to 2021?",
+    "gold_pmids": [
+      "41873547"
+    ],
+    "reference_answer": "The administrative prevalence of MPD increased by 58.5% from 4.1/100,000 in 2012 to 6.5/100,000 in 2021. The prevalence peaked in 17- to 24-year-olds and showed a female/male ratio of 6:1.",
+    "question_type": "epidemiology",
+    "keywords": [
+      "multiple personality disorder",
+      "prevalence",
+      "Germany",
+      "psychiatric comorbidity",
+      "treatment"
+    ]
+  },
+  {
+    "question": "What psychological burdens were assessed in patients with COPD in the study conducted in the Podlaskie Voivodeship?",
+    "gold_pmids": [
+      "41977070"
+    ],
+    "reference_answer": "The study assessed depressive symptoms, anxiety, insomnia, and sexual quality of life in patients with COPD. Median scores indicated a considerable burden of depressive symptoms, anxiety, and insomnia, alongside reduced sexual quality of life.",
+    "question_type": "other",
+    "keywords": [
+      "COPD",
+      "depressive symptoms",
+      "anxiety",
+      "insomnia",
+      "sexual quality of life"
+    ]
+  },
+  {
+    "question": "What are the two distinct genetic dimensions identified in Major Depressive Disorder (MDD) and their associated clinical manifestations?",
+    "gold_pmids": [
+      "41929285"
+    ],
+    "reference_answer": "The two distinct genetic dimensions of MDD identified are factor 1 (F1), which captures appetite/weight loss, insomnia, guilt/worthlessness, psychomotor slowing, and suicidality, and factor 2 (F2), which reflects concentration problems, anhedonia, depressed mood, appetite/weight gain, and fatigue. F1 has a stronger genetic overlap with neurodevelopmental/psychiatric phenotypes, while F2 significantly overlaps with cardiometabolic traits.",
+    "question_type": "mechanism",
+    "keywords": [
+      "Major Depressive Disorder",
+      "genetic dimensions",
+      "neurodevelopmental traits",
+      "cardiometabolic traits",
+      "symptoms"
+    ]
+  },
+  {
+    "question": "What pathways are proposed to connect the dorsolateral prefrontal cortex to the subgenual cingulate cortex in TMS therapy for depression?",
+    "gold_pmids": [
+      "41981337"
+    ],
+    "reference_answer": "We propose putative cortical and subcortical routes that connect stimulation sites in the dorsolateral prefrontal cortex to the subgenual cingulate cortex via intermediate regions.",
+    "question_type": "mechanism",
+    "keywords": [
+      "transcranial magnetic stimulation",
+      "depression",
+      "dorsolateral prefrontal cortex",
+      "subgenual cingulate cortex",
+      "connectome modeling"
+    ]
+  },
+  {
+    "question": "What changes in insular functional connectivity were observed following bright light therapy in individuals with subthreshold depression?",
+    "gold_pmids": [
+      "41975589"
+    ],
+    "reference_answer": "Following bright light therapy, increased left ventral anterior insula-right middle frontal gyrus connectivity and decreased left dorsal anterior insula-left putamen connectivity in the slow-4 band were observed. Additionally, decreased left dorsal anterior insula-right cerebellar anterior lobe functional connectivity was correlated with symptom improvement.",
+    "question_type": "mechanism",
+    "keywords": [
+      "bright light therapy",
+      "insular connectivity",
+      "subthreshold depression",
+      "functional MRI",
+      "depressive symptoms"
+    ]
+  },
+  {
+    "question": "What is the accuracy of the OCFA model on the official DAIC-WOZ test split for depression detection?",
+    "gold_pmids": [
+      "41845968"
+    ],
+    "reference_answer": "On the official DAIC-WOZ test split, OCFA achieves 82.98% accuracy, 82.61% F1, AUROC= 0.886, and post-scaling ECE≈ 0.040 at 0.065 GMac (112×112) with 3.80 M parameters.",
+    "question_type": "diagnosis",
+    "keywords": [
+      "Major Depressive Disorder",
+      "OCFA",
+      "accuracy",
+      "DAIC-WOZ",
+      "depression detection"
+    ]
+  },
+  {
+    "question": "What are some of the challenges that must be addressed before broader clinical implementation of psychedelic-assisted therapies?",
+    "gold_pmids": [
+      "41944071"
+    ],
+    "reference_answer": "Unresolved challenges include long-term safety, scalability, workforce training, equity of access, and medico-legal accountability, which must be addressed before broader clinical implementation.",
+    "question_type": "treatment",
+    "keywords": [
+      "psychedelic-assisted therapies",
+      "challenges",
+      "clinical implementation",
+      "safety",
+      "access"
+    ]
+  },
+  {
+    "question": "How does smoking status affect the dosing of olanzapine and clozapine?",
+    "gold_pmids": [
+      "41949926"
+    ],
+    "reference_answer": "Smokers require higher doses of olanzapine and clozapine to achieve therapeutic serum concentrations due to accelerated drug clearance, while non-smokers and those who cease smoking are at risk of adverse effects from elevated drug levels.",
+    "question_type": "treatment",
+    "keywords": [
+      "smoking",
+      "olanzapine",
+      "clozapine",
+      "CYP1A2",
+      "dose adjustments"
+    ]
+  }
+]
